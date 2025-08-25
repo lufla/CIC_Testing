@@ -1,9 +1,10 @@
 // QC_Tester_Firmware.ino
 //TODO generate a requirements file and a read me fot the installation of versions etc.
 //TOO make seperate file for reading the ADC adn DACs
+
 /*
   CIC Quality Control Tester Firmware
-  
+
   HOW TO USE:
   1. Open this file in the Arduino IDE.
   2. Create new tabs for each of the other files (.h and .cpp).
@@ -25,6 +26,7 @@
 */
 //TODO include here and in the arduino sheeld the libarys localy, so that they dont get lost in the future
 //Manual changes made in ESP32SJA1000.h (CAN), because an old libary was not available anymore
+
 #include <Arduino.h>
 #include <ArduinoJson.h>
 #include "src/config/config.h"
@@ -40,7 +42,7 @@ void setup() {
     Serial.begin(PC_SERIAL_BAUD);
     while (!Serial) { delay(10); }
 
-    Serial.println("QC Tester Firmware Booting...");
+    Serial.println("QC Tester Firmware Initialized and Ready.");
 
     // Determine role
     pinMode(ROLE_SELECT_PIN, INPUT_PULLUP);
@@ -52,15 +54,12 @@ void setup() {
     }
 
     if (currentRole == MASTER) {
-        Serial.println("{\"status\":\"boot\", \"role\":\"MASTER\"}");
         // Initialize communication with Slave
         SLAVE_SERIAL.begin(SLAVE_SERIAL_BAUD, SERIAL_8N1, SLAVE_RX_PIN, SLAVE_TX_PIN);
         ChannelA::initialize();
     } else { // SLAVE
         // The slave's primary Serial is connected to the Master's SLAVE_SERIAL pins.
-        // It will print its boot message to the Master's serial monitor.
         SLAVE_SERIAL.begin(PC_SERIAL_BAUD); // Slaves use their main serial to talk to master
-        SLAVE_SERIAL.println("{\"status\":\"boot\", \"role\":\"SLAVE\"}");
         ChannelB::initialize();
     }
 }

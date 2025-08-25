@@ -1,18 +1,23 @@
 {
-
-
     "tester_info": {
-        "operator_name": "Default User",
-        "station_id": "QC-Station-01"
+        "operator_name": "Lukas Flad",
+        "validation_rules": {
+            "station_id_prefix": "QC-Station-",
+            "station_id_numeric_length": 2
+        }
     },
     "test_parameters": {
+        "serial_baudrate": 115200,
+        "serial_number_length": 4,
+        "serial_number_numeric_only": true,
         "can_baudrate": 125000,
-        "can_test_messages": 1000,
+        "can_short_test_messages": 10,
+        "can_long_test_messages": 1000,
         "voltage_tolerance_percent": 5.0,
         "current_tolerance_percent": 5.0,
-        "burn_in_duration_seconds": 540
+        "full_power_duration_seconds": 10
     },
-    "voltage_levels": {
+    "valid_voltage_patterns": {
         "1.9": "0x03",
         "2.0": "0x0F",
         "2.4": "0x33",
@@ -23,4 +28,3 @@
         "4.6": "0xFF"
     }
 }
-

@@ -9,6 +9,7 @@
 // config.h
 
 #pragma once
+#define STATION_ID "QC-Station-01"
 
 // --- ROLE SELECTION ---
 // Pin to determine if the ESP32 is Master or Slave

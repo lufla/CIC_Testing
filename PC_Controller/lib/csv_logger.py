@@ -21,18 +21,18 @@ class CsvLogger:
         # Write the main header row for the data columns
         self.writer.writerow(['Test Name', 'Channel', 'Parameter', 'Measurement', 'Status', 'Timestamp'])
 
-    def log_header(self, serial_number, operator):
+    def log_header(self, session_details):
         """
-        Logs the overall test information at the top of the file.
+        Logs the overall test information at the top of the file using confirmed session details.
 
         Args:
-            serial_number (str): The serial number of the device under test.
-            operator (str): The name of the person running the test.
+            session_details (dict): A dictionary containing all the test session info.
         """
-        self.writer.writerow(['Serial Number', serial_number])
-        self.writer.writerow(['Operator', operator])
-        self.writer.writerow(['Test Date', datetime.now().strftime('%Y-%m-%d')])
-        self.writer.writerow(['Test Time', datetime.now().strftime('%H:%M:%S')])
+        self.writer.writerow(['Serial Number', session_details['serial_number']])
+        self.writer.writerow(['Operator', session_details['operator_name']])
+        self.writer.writerow(['Master ID', session_details['master_id']])
+        self.writer.writerow(['Test Date', session_details['date']])
+        self.writer.writerow(['Test Time', session_details['time']])
         self.writer.writerow([])  # Add a blank line for separation before the data starts
 
     def log_row(self, data_list):

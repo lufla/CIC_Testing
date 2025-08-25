@@ -1,7 +1,0 @@
-Test Name,Channel,Parameter,Measurement,Status,Timestamp
-Serial Number,1111
-Operator,Default User
-Test Date,2025-08-25
-Test Time,11:50:47
-
-Voltage Test,A,Set 1.9V,Measured N/AV,FAIL,2025-08-25 11:50:52.519

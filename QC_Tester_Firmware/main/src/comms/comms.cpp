@@ -17,6 +17,22 @@ void handlePCCommand(String cmd) {
 
     const char* command = doc["command"];
 
+    // --------------------------------------------------------------------
+    // Command: Get Info
+    // Responds with the device's role and station ID.
+    // --------------------------------------------------------------------
+    if (strcmp(command, "get_info") == 0) {
+        StaticJsonDocument<128> response_doc;
+        response_doc["status"] = "info";
+        response_doc["role"] = "MASTER";
+        response_doc["station_id"] = STATION_ID; // STATION_ID should be defined in config.h
+
+        serializeJson(response_doc, Serial);
+        Serial.println();
+        return; // Command handled
+    }
+
+
     // *** NEW: Command to read both voltages at once ***
     if (strcmp(command, "read_all_voltages") == 0) {
         // 1. Read local channel A voltage directly
