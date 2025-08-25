@@ -1,0 +1,26 @@
+{
+
+
+    "tester_info": {
+        "operator_name": "Default User",
+        "station_id": "QC-Station-01"
+    },
+    "test_parameters": {
+        "can_baudrate": 125000,
+        "can_test_messages": 1000,
+        "voltage_tolerance_percent": 5.0,
+        "current_tolerance_percent": 5.0,
+        "burn_in_duration_seconds": 540
+    },
+    "voltage_levels": {
+        "1.9": "0x03",
+        "2.0": "0x0F",
+        "2.4": "0x33",
+        "2.6": "0x3F",
+        "2.8": "0xC3",
+        "3.5": "0xCF",
+        "4.2": "0xF3",
+        "4.6": "0xFF"
+    }
+}
+

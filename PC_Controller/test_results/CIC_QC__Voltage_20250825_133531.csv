@@ -1,0 +1,11 @@
+Test Name,Channel,Parameter,Measurement,Status,Timestamp
+Serial Number,
+Operator,Default User
+Test Date,2025-08-25
+Test Time,13:35:31
+
+Voltage Test,A,Set 1.9V,Measured N/AV,FAIL,2025-08-25 13:35:35.928
+Voltage Test,A,Set 2.0V,Measured N/AV,FAIL,2025-08-25 13:35:40.951
+Voltage Test,A,Set 2.4V,Measured N/AV,FAIL,2025-08-25 13:35:45.959
+Voltage Test,A,Set 2.6V,Measured N/AV,FAIL,2025-08-25 13:35:50.979
+Voltage Test,A,Set 2.8V,Measured N/AV,FAIL,2025-08-25 13:35:55.997

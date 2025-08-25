@@ -1,0 +1,22 @@
+Test Name,Channel,Parameter,Measurement,Status,Timestamp
+Serial Number,123
+Operator,Default User
+Test Date,2025-08-25
+Test Time,11:19:28
+
+Voltage Test,A,Set 1.9V,Measured N/AV,FAIL,2025-08-25 11:19:33.348
+Voltage Test,A,Set 2.0V,Measured N/AV,FAIL,2025-08-25 11:19:38.367
+Voltage Test,A,Set 2.4V,Measured N/AV,FAIL,2025-08-25 11:19:43.393
+Voltage Test,A,Set 2.6V,Measured N/AV,FAIL,2025-08-25 11:19:48.409
+Voltage Test,A,Set 2.8V,Measured N/AV,FAIL,2025-08-25 11:19:53.436
+Voltage Test,A,Set 3.5V,Measured N/AV,FAIL,2025-08-25 11:19:58.455
+Voltage Test,A,Set 4.2V,Measured N/AV,FAIL,2025-08-25 11:20:03.472
+Voltage Test,A,Set 4.6V,Measured N/AV,FAIL,2025-08-25 11:20:08.498
+Voltage Test,B,Set 1.9V,Measured N/AV,FAIL,2025-08-25 11:20:13.525
+Voltage Test,B,Set 2.0V,Measured N/AV,FAIL,2025-08-25 11:20:18.551
+Voltage Test,B,Set 2.4V,Measured N/AV,FAIL,2025-08-25 11:20:23.577
+Voltage Test,B,Set 2.6V,Measured N/AV,FAIL,2025-08-25 11:20:28.600
+Voltage Test,B,Set 2.8V,Measured N/AV,FAIL,2025-08-25 11:20:33.626
+Voltage Test,B,Set 3.5V,Measured N/AV,FAIL,2025-08-25 11:20:38.644
+Voltage Test,B,Set 4.2V,Measured N/AV,FAIL,2025-08-25 11:20:43.670
+Voltage Test,B,Set 4.6V,Measured N/AV,FAIL,2025-08-25 11:20:48.689
