@@ -2,16 +2,8 @@
 #include <SPI.h>
 #include <math.h>
 
-// Code updated for ESP32-DEVKITC-32D based on the provided schematic.
-// Key changes:
-// 1. Pin definitions updated for ESP32.
-// 2. Chip Select (CS) logic is now multiplexed using MCS, CCS, and CH_SEL pins.
-//    - New helper functions selectChip() and deselectChips() manage this.
-// 3. PWM functions updated for the latest ESP32 Arduino Core.
-// 4. ADC initialization is now done once in setup() for stability.
-// 5. Serial print output has been consolidated into a compact format.
+// ################# CONSTANTS #################
 
-// ################# PIN DEFINITIONS FOR ESP32 #################
 // CAN Test Signal Pins (Originally CANTXA/B)
 const int CANTX_Pin = 17; // ESP32's TX2, used for PWM signal
 const int CANRX_Pin = 16; // ESP32's RX2
@@ -22,65 +14,36 @@ const int SPI_MISO_PIN = 12;
 const int SPI_SCK_PIN = 14;
 
 // Chip Select Control Pins
-const int MCS_PIN = 15; // Primary Chip Select for Monitor bus (ADCs)
-const int CCS_PIN = 2;  // Primary Chip Select for Control bus (Power Enables)
-const int CH_SEL_PIN = 4; // Selects between device A (HIGH) and B (LOW)
+const int MCS_PIN = 15;    // Chip Select for Monitor bus (ADCs)
+const int CH_SEL_PIN = 4;  // Selects between device A (HIGH) and B (LOW)
 
 // PWM Configuration for CAN Test Signal
-const int PWM_FREQ = 980; // Match original Arduino's ~980 Hz
-const int PWM_RESOLUTION = 8; // 8-bit resolution (0-255)
+const int PWM_FREQ = 980;       // Match original Arduino's ~980 Hz
+const int PWM_RESOLUTION = 8;   // 8-bit resolution (0-255)
 
-byte powerset = 255;
-
-// ################# NEW HELPER FUNCTIONS FOR CHIP SELECT #################
+// ################# HELPER FUNCTIONS FOR CHIP SELECT #################
 
 /**
- * @brief Selects an SPI chip using the multiplexed control logic.
+ * @brief Selects an ADC chip.
  * @param side Selects device A or B. 1 for A (CH_SEL=HIGH), 2 for B (CH_SEL=LOW).
- * @param bus Selects the bus. 'M' for Monitor (ADC), 'C' for Control (Power).
  */
-void selectChip(int side, char bus) {
+void selectADC(int side) {
   if (side == 1) {
     digitalWrite(CH_SEL_PIN, HIGH); // Select device 'A'
   } else {
     digitalWrite(CH_SEL_PIN, LOW); // Select device 'B'
   }
-
-  if (bus == 'M' || bus == 'm') {
-    digitalWrite(CCS_PIN, HIGH);
-    digitalWrite(MCS_PIN, LOW);
-  } else if (bus == 'C' || bus == 'c') {
-    digitalWrite(MCS_PIN, HIGH);
-    digitalWrite(CCS_PIN, LOW);
-  }
+  digitalWrite(MCS_PIN, LOW); // Activate the ADC bus
 }
 
 /**
- * @brief Deselects all SPI chips by pulling both primary CS lines HIGH.
+ * @brief Deselects the ADC chip.
  */
-void deselectChips() {
+void deselectADC() {
   digitalWrite(MCS_PIN, HIGH);
-  digitalWrite(CCS_PIN, HIGH);
 }
 
-// ################# ADC AND POWER FUNCTIONS #################
-
-// MCP23S08 is the power enable register
-void SET_POWER23S08(int side, int state) {
-  selectChip(side, 'C');
-  delay(1);
-  SPI.transfer(0x40); delay(1);
-  SPI.transfer(0x00); delay(1);
-  SPI.transfer(0x00); delay(1);
-  deselectChips();
-  delay(4);
-  selectChip(side, 'C');
-  delay(1);
-  SPI.transfer(0x40); delay(1);
-  SPI.transfer(0x09); delay(1);
-  SPI.transfer(state); delay(1);
-  deselectChips();
-}
+// ################# ADC FUNCTIONS #################
 
 /**
  * @brief Performs the one-time initialization for an ADC.
@@ -92,7 +55,7 @@ void ADC_Init(int side) {
   Serial.println(side == 1 ? "A" : "B");
 
   // Sync sequence
-  selectChip(side, 'M');
+  selectADC(side);
   for (int i = 0; i < 15; i++) {
     SPI.transfer(0xff);
   }
@@ -102,48 +65,48 @@ void ADC_Init(int side) {
   // ADC-Reset
   SPI.transfer(0x03); SPI.transfer(0x00); SPI.transfer(0x00); SPI.transfer(0x80);
   delay(1);
-  deselectChips();
+  deselectADC();
   delay(1);
-  selectChip(side, 'M');
+  selectADC(side);
   delay(1);
   SPI.transfer(0x03); SPI.transfer(0x00); SPI.transfer(0x00); SPI.transfer(0x00);
   delay(1);
-  deselectChips();
+  deselectADC();
   delay(2);
 
   // ADC-configuration
-  selectChip(side, 'M');
+  selectADC(side);
   SPI.transfer(0x03); SPI.transfer(0x00); SPI.transfer(0x30); SPI.transfer(0x00);
   delay(1);
-  deselectChips();
+  deselectADC();
   delay(2);
 
   // Write configuration registers
-  selectChip(side, 'M');
+  selectADC(side);
   SPI.transfer(0x05);
   SPI.transfer(0x02); SPI.transfer(0xb0); SPI.transfer(0xab);
   SPI.transfer(0x12); SPI.transfer(0xb1); SPI.transfer(0xab);
   delay(1);
-  deselectChips();
+  deselectADC();
   delay(2);
 
   // Calibrate all channels
   for (int channel = 0; channel < 4; channel++) {
     int channelbyte;
     // Offset cal
-    selectChip(side, 'M');
+    selectADC(side);
     delay(10);
     channelbyte = (channel * 8) | 0x81;
     SPI.transfer(channelbyte);
-    deselectChips();
+    deselectADC();
     delay(10);
 
     // Gain cal
-    selectChip(side, 'M');
+    selectADC(side);
     delay(10);
     channelbyte = (channel * 8) | 0x82;
     SPI.transfer(channelbyte);
-    deselectChips();
+    deselectADC();
     delay(10);
   }
   Serial.println("Initialization complete.");
@@ -160,17 +123,17 @@ void ADC_Read(int side, int channel) {
   float ADC_voltage;
 
   // Start conversion
-  selectChip(side, 'M');
+  selectADC(side);
   delay(10);
   channelbyte = (channel * 8) | 0x80;
   SPI.transfer(channelbyte);
   SPI.transfer(0x00); SPI.transfer(0x00); SPI.transfer(0x00); SPI.transfer(0x00);
   delay(1);
-  deselectChips();
+  deselectADC();
   delay(100); // Wait for conversion
 
   // Read the result
-  selectChip(side, 'M');
+  selectADC(side);
   SPI.transfer(channelbyte);
   SPI.transfer(0x00); // Dummy byte
   int byte2 = SPI.transfer(0x00);
@@ -196,16 +159,15 @@ void ADC_Read(int side, int channel) {
   Serial.print("mV)");
 
   delay(1);
-  deselectChips();
+  deselectADC();
   delay(1);
 }
 
 // #################### SETUP ##########################
 void setup() {
   pinMode(MCS_PIN, OUTPUT);
-  pinMode(CCS_PIN, OUTPUT);
   pinMode(CH_SEL_PIN, OUTPUT);
-  deselectChips();
+  deselectADC(); // Deselect the ADC bus initially
 
   ledcAttach(CANTX_Pin, PWM_FREQ, PWM_RESOLUTION);
 
@@ -215,7 +177,7 @@ void setup() {
   pinMode(CANTX_Pin, OUTPUT);
   pinMode(CANRX_Pin, INPUT);
 
-  Serial.begin(9600);
+  Serial.begin(115200);
   delay(2000); // Wait for serial monitor to connect
 
   // Initialize both ADCs once
@@ -225,34 +187,9 @@ void setup() {
 
 // #################### MAIN LOOP ##########################
 void loop() {
-  byte inbyte;
-  if (Serial.available() > 0) {
-    inbyte = Serial.read();
-    Serial.print("received deci: ");
-    Serial.print(inbyte, DEC);
-    Serial.print(" = hex : ");
-    Serial.print(inbyte, HEX);
-    Serial.print(" = bin : ");
-    Serial.println(inbyte, BIN);
-    powerset = inbyte;
-  }
-
-  powerset = powerset + 1;
-
-  //----------- POWER ON ---------------
-  SET_POWER23S08(2, powerset);
-  delay(10);
-  SET_POWER23S08(1, powerset);
-  delay(100);
-
-  Serial.println("\n  ====ON== ");
-  Serial.print(" ON =");
-  Serial.print(" = hex : ");
-  Serial.println(powerset, HEX);
-  Serial.println("---------------------------------");
-
   // -------- Read and print ALL ADC channel values in a compact format ------
-  Serial.println("Reading:");
+  Serial.println("\n---------------------------------");
+  Serial.println("Reading ADC Values:");
   Serial.print("A: ");
   for (int i = 0; i < 4; i++) {
     ADC_Read(1, i);
@@ -278,4 +215,3 @@ void loop() {
   ledcWrite(CANTX_Pin, 64);
   ledcWrite(CANTX_Pin, 255);
 }
-
