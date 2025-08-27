@@ -249,29 +249,23 @@ void setup() {
 void loop() {
     Serial.println("\n---------------------------------");
     
-    // --- Test Channel A ---
-    Serial.println(">>> Testing Channel A <<<");
+    // --- Test Channel A and B in parallel---
+    Serial.println(">>> Testing Channel A and B <<<");
     setVcanPower('A', 0x03); // Turn VCAN A ON
-    Serial.println("VCAN A Power: ON");
-    delay(500); // Wait for power to stabilize
-    ADC_ReadAll('A'); // Read ADC A values
-    setVcanPower('A', 0x00); // Turn VCAN A OFF
-    Serial.println("VCAN A Power: OFF");
-    delay(500);
-    ADC_ReadAll('A'); // Read ADC A values
-    
-    delay(2000); // Wait 2 seconds
-
-    // --- Test Channel B ---
-    Serial.println("\n>>> Testing Channel B <<<");
     setVcanPower('B', 0x03); // Turn VCAN B ON
-    Serial.println("VCAN B Power: ON");
+    Serial.println("VCAN A and B Power: ON");
     delay(500); // Wait for power to stabilize
-    ADC_ReadAll('B'); // Read ADC B values
-    setVcanPower('B', 0x00); // Turn VCAN B OFF
-    Serial.println("VCAN B Power: OFF");
-    delay(500);
+    ADC_ReadAll('A'); // Read ADC A values
     ADC_ReadAll('B'); // Read ADC A values
+
+    delay(5000); // Wait 5 seconds
+
+    setVcanPower('A', 0x00); // Turn VCAN A OFF
+    setVcanPower('B', 0x00); // Turn VCAN B OFF
+    Serial.println("VCAN A and B Power: OFF");
+    delay(500);
+    ADC_ReadAll('A'); // Read ADC A values
+    ADC_ReadAll('B'); // Read ADC B values
     
-    delay(3000); // Wait 3 seconds before repeating the cycle
+    delay(5000); // Wait 5 seconds
 }

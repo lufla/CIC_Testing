@@ -1,0 +1,1031 @@
+Test Name,Channel,Parameter,Measurement,Status,Timestamp
+Serial Number,1234
+Operator,Lukas Flad
+Master ID,QC-Station-01
+Test Date,2025-08-26
+Test Time,17:57:28
+
+Voltage Test (Switches OFF),A,Set Pattern 0x00,N/A,ACTION_LOGGED,2025-08-26 17:57:40.173
+Voltage Test (Switches OFF),B,Set Pattern 0x00,N/A,ACTION_LOGGED,2025-08-26 17:57:42.176
+Voltage Test (Switches OFF),A,Set Pattern 0x01,N/A,ACTION_LOGGED,2025-08-26 17:57:42.187
+Voltage Test (Switches OFF),B,Set Pattern 0x01,N/A,ACTION_LOGGED,2025-08-26 17:57:44.188
+Voltage Test (Switches OFF),A,Set Pattern 0x02,N/A,ACTION_LOGGED,2025-08-26 17:57:44.211
+Voltage Test (Switches OFF),B,Set Pattern 0x02,N/A,ACTION_LOGGED,2025-08-26 17:57:46.216
+Voltage Test (Switches OFF),A,Set Pattern 0x03,N/A,ACTION_LOGGED,2025-08-26 17:57:46.235
+Voltage Test (Switches OFF),B,Set Pattern 0x03,N/A,ACTION_LOGGED,2025-08-26 17:57:48.239
+Voltage Test (Switches OFF),A,Set Pattern 0x04,N/A,ACTION_LOGGED,2025-08-26 17:57:48.250
+Voltage Test (Switches OFF),B,Set Pattern 0x04,N/A,ACTION_LOGGED,2025-08-26 17:57:50.260
+Voltage Test (Switches OFF),A,Set Pattern 0x05,N/A,ACTION_LOGGED,2025-08-26 17:57:50.264
+Voltage Test (Switches OFF),B,Set Pattern 0x05,N/A,ACTION_LOGGED,2025-08-26 17:57:52.272
+Voltage Test (Switches OFF),A,Set Pattern 0x06,N/A,ACTION_LOGGED,2025-08-26 17:57:52.280
+Voltage Test (Switches OFF),B,Set Pattern 0x06,N/A,ACTION_LOGGED,2025-08-26 17:57:54.280
+Voltage Test (Switches OFF),A,Set Pattern 0x07,N/A,ACTION_LOGGED,2025-08-26 17:57:54.304
+Voltage Test (Switches OFF),B,Set Pattern 0x07,N/A,ACTION_LOGGED,2025-08-26 17:57:56.308
+Voltage Test (Switches OFF),A,Set Pattern 0x08,N/A,ACTION_LOGGED,2025-08-26 17:57:56.317
+Voltage Test (Switches OFF),B,Set Pattern 0x08,N/A,ACTION_LOGGED,2025-08-26 17:57:58.328
+Voltage Test (Switches OFF),A,Set Pattern 0x09,N/A,ACTION_LOGGED,2025-08-26 17:57:58.332
+Voltage Test (Switches OFF),B,Set Pattern 0x09,N/A,ACTION_LOGGED,2025-08-26 17:58:00.343
+Voltage Test (Switches OFF),A,Set Pattern 0x0A,N/A,ACTION_LOGGED,2025-08-26 17:58:00.348
+Voltage Test (Switches OFF),B,Set Pattern 0x0A,N/A,ACTION_LOGGED,2025-08-26 17:58:02.361
+Voltage Test (Switches OFF),A,Set Pattern 0x0B,N/A,ACTION_LOGGED,2025-08-26 17:58:02.365
+Voltage Test (Switches OFF),B,Set Pattern 0x0B,N/A,ACTION_LOGGED,2025-08-26 17:58:04.371
+Voltage Test (Switches OFF),A,Set Pattern 0x0C,N/A,ACTION_LOGGED,2025-08-26 17:58:04.381
+Voltage Test (Switches OFF),B,Set Pattern 0x0C,N/A,ACTION_LOGGED,2025-08-26 17:58:06.382
+Voltage Test (Switches OFF),A,Set Pattern 0x0D,N/A,ACTION_LOGGED,2025-08-26 17:58:06.405
+Voltage Test (Switches OFF),B,Set Pattern 0x0D,N/A,ACTION_LOGGED,2025-08-26 17:58:08.408
+Voltage Test (Switches OFF),A,Set Pattern 0x0E,N/A,ACTION_LOGGED,2025-08-26 17:58:08.420
+Voltage Test (Switches OFF),B,Set Pattern 0x0E,N/A,ACTION_LOGGED,2025-08-26 17:58:10.429
+Voltage Test (Switches OFF),A,Set Pattern 0x0F,N/A,ACTION_LOGGED,2025-08-26 17:58:10.434
+Voltage Test (Switches OFF),B,Set Pattern 0x0F,N/A,ACTION_LOGGED,2025-08-26 17:58:12.439
+Voltage Test (Switches OFF),A,Set Pattern 0x10,N/A,ACTION_LOGGED,2025-08-26 17:58:12.459
+Voltage Test (Switches OFF),B,Set Pattern 0x10,N/A,ACTION_LOGGED,2025-08-26 17:58:14.464
+Voltage Test (Switches OFF),A,Set Pattern 0x11,N/A,ACTION_LOGGED,2025-08-26 17:58:14.483
+Voltage Test (Switches OFF),B,Set Pattern 0x11,N/A,ACTION_LOGGED,2025-08-26 17:58:16.487
+Voltage Test (Switches OFF),A,Set Pattern 0x12,N/A,ACTION_LOGGED,2025-08-26 17:58:16.497
+Voltage Test (Switches OFF),B,Set Pattern 0x12,N/A,ACTION_LOGGED,2025-08-26 17:58:18.507
+Voltage Test (Switches OFF),A,Set Pattern 0x13,N/A,ACTION_LOGGED,2025-08-26 17:58:18.521
+Voltage Test (Switches OFF),B,Set Pattern 0x13,N/A,ACTION_LOGGED,2025-08-26 17:58:20.531
+Voltage Test (Switches OFF),A,Set Pattern 0x14,N/A,ACTION_LOGGED,2025-08-26 17:58:20.545
+Voltage Test (Switches OFF),B,Set Pattern 0x14,N/A,ACTION_LOGGED,2025-08-26 17:58:22.555
+Voltage Test (Switches OFF),A,Set Pattern 0x15,N/A,ACTION_LOGGED,2025-08-26 17:58:22.569
+Voltage Test (Switches OFF),B,Set Pattern 0x15,N/A,ACTION_LOGGED,2025-08-26 17:58:24.580
+Voltage Test (Switches OFF),A,Set Pattern 0x16,N/A,ACTION_LOGGED,2025-08-26 17:58:24.593
+Voltage Test (Switches OFF),B,Set Pattern 0x16,N/A,ACTION_LOGGED,2025-08-26 17:58:26.596
+Voltage Test (Switches OFF),A,Set Pattern 0x17,N/A,ACTION_LOGGED,2025-08-26 17:58:26.607
+Voltage Test (Switches OFF),B,Set Pattern 0x17,N/A,ACTION_LOGGED,2025-08-26 17:58:28.617
+Voltage Test (Switches OFF),A,Set Pattern 0x18,N/A,ACTION_LOGGED,2025-08-26 17:58:28.631
+Voltage Test (Switches OFF),B,Set Pattern 0x18,N/A,ACTION_LOGGED,2025-08-26 17:58:30.633
+Voltage Test (Switches OFF),A,Set Pattern 0x19,N/A,ACTION_LOGGED,2025-08-26 17:58:30.655
+Voltage Test (Switches OFF),B,Set Pattern 0x19,N/A,ACTION_LOGGED,2025-08-26 17:58:32.665
+Voltage Test (Switches OFF),A,Set Pattern 0x1A,N/A,ACTION_LOGGED,2025-08-26 17:58:32.679
+Voltage Test (Switches OFF),B,Set Pattern 0x1A,N/A,ACTION_LOGGED,2025-08-26 17:58:34.686
+Voltage Test (Switches OFF),A,Set Pattern 0x1B,N/A,ACTION_LOGGED,2025-08-26 17:58:34.693
+Voltage Test (Switches OFF),B,Set Pattern 0x1B,N/A,ACTION_LOGGED,2025-08-26 17:58:36.700
+Voltage Test (Switches OFF),A,Set Pattern 0x1C,N/A,ACTION_LOGGED,2025-08-26 17:58:36.707
+Voltage Test (Switches OFF),B,Set Pattern 0x1C,N/A,ACTION_LOGGED,2025-08-26 17:58:38.710
+Voltage Test (Switches OFF),A,Set Pattern 0x1D,N/A,ACTION_LOGGED,2025-08-26 17:58:38.721
+Voltage Test (Switches OFF),B,Set Pattern 0x1D,N/A,ACTION_LOGGED,2025-08-26 17:58:40.730
+Voltage Test (Switches OFF),A,Set Pattern 0x1E,N/A,ACTION_LOGGED,2025-08-26 17:58:40.745
+Voltage Test (Switches OFF),B,Set Pattern 0x1E,N/A,ACTION_LOGGED,2025-08-26 17:58:42.750
+Voltage Test (Switches OFF),A,Set Pattern 0x1F,N/A,ACTION_LOGGED,2025-08-26 17:58:42.759
+Voltage Test (Switches OFF),B,Set Pattern 0x1F,N/A,ACTION_LOGGED,2025-08-26 17:58:44.770
+Voltage Test (Switches OFF),A,Set Pattern 0x20,N/A,ACTION_LOGGED,2025-08-26 17:58:44.774
+Voltage Test (Switches OFF),B,Set Pattern 0x20,N/A,ACTION_LOGGED,2025-08-26 17:58:46.778
+Voltage Test (Switches OFF),A,Set Pattern 0x21,N/A,ACTION_LOGGED,2025-08-26 17:58:46.801
+Voltage Test (Switches OFF),B,Set Pattern 0x21,N/A,ACTION_LOGGED,2025-08-26 17:58:48.802
+Voltage Test (Switches OFF),A,Set Pattern 0x22,N/A,ACTION_LOGGED,2025-08-26 17:58:48.816
+Voltage Test (Switches OFF),B,Set Pattern 0x22,N/A,ACTION_LOGGED,2025-08-26 17:58:50.827
+Voltage Test (Switches OFF),A,Set Pattern 0x23,N/A,ACTION_LOGGED,2025-08-26 17:58:50.831
+Voltage Test (Switches OFF),B,Set Pattern 0x23,N/A,ACTION_LOGGED,2025-08-26 17:58:52.833
+Voltage Test (Switches OFF),A,Set Pattern 0x24,N/A,ACTION_LOGGED,2025-08-26 17:58:52.848
+Voltage Test (Switches OFF),B,Set Pattern 0x24,N/A,ACTION_LOGGED,2025-08-26 17:58:54.858
+Voltage Test (Switches OFF),A,Set Pattern 0x25,N/A,ACTION_LOGGED,2025-08-26 17:58:54.863
+Voltage Test (Switches OFF),B,Set Pattern 0x25,N/A,ACTION_LOGGED,2025-08-26 17:58:56.864
+Voltage Test (Switches OFF),A,Set Pattern 0x26,N/A,ACTION_LOGGED,2025-08-26 17:58:56.889
+Voltage Test (Switches OFF),B,Set Pattern 0x26,N/A,ACTION_LOGGED,2025-08-26 17:58:58.896
+Voltage Test (Switches OFF),A,Set Pattern 0x27,N/A,ACTION_LOGGED,2025-08-26 17:58:58.903
+Voltage Test (Switches OFF),B,Set Pattern 0x27,N/A,ACTION_LOGGED,2025-08-26 17:59:00.909
+Voltage Test (Switches OFF),A,Set Pattern 0x28,N/A,ACTION_LOGGED,2025-08-26 17:59:00.918
+Voltage Test (Switches OFF),B,Set Pattern 0x28,N/A,ACTION_LOGGED,2025-08-26 17:59:02.923
+Voltage Test (Switches OFF),A,Set Pattern 0x29,N/A,ACTION_LOGGED,2025-08-26 17:59:02.941
+Voltage Test (Switches OFF),B,Set Pattern 0x29,N/A,ACTION_LOGGED,2025-08-26 17:59:04.952
+Voltage Test (Switches OFF),A,Set Pattern 0x2A,N/A,ACTION_LOGGED,2025-08-26 17:59:04.956
+Voltage Test (Switches OFF),B,Set Pattern 0x2A,N/A,ACTION_LOGGED,2025-08-26 17:59:06.962
+Voltage Test (Switches OFF),A,Set Pattern 0x2B,N/A,ACTION_LOGGED,2025-08-26 17:59:06.972
+Voltage Test (Switches OFF),B,Set Pattern 0x2B,N/A,ACTION_LOGGED,2025-08-26 17:59:08.982
+Voltage Test (Switches OFF),A,Set Pattern 0x2C,N/A,ACTION_LOGGED,2025-08-26 17:59:08.987
+Voltage Test (Switches OFF),B,Set Pattern 0x2C,N/A,ACTION_LOGGED,2025-08-26 17:59:10.996
+Voltage Test (Switches OFF),A,Set Pattern 0x2D,N/A,ACTION_LOGGED,2025-08-26 17:59:11.013
+Voltage Test (Switches OFF),B,Set Pattern 0x2D,N/A,ACTION_LOGGED,2025-08-26 17:59:13.022
+Voltage Test (Switches OFF),A,Set Pattern 0x2E,N/A,ACTION_LOGGED,2025-08-26 17:59:13.028
+Voltage Test (Switches OFF),B,Set Pattern 0x2E,N/A,ACTION_LOGGED,2025-08-26 17:59:15.028
+Voltage Test (Switches OFF),A,Set Pattern 0x2F,N/A,ACTION_LOGGED,2025-08-26 17:59:15.051
+Voltage Test (Switches OFF),B,Set Pattern 0x2F,N/A,ACTION_LOGGED,2025-08-26 17:59:17.054
+Voltage Test (Switches OFF),A,Set Pattern 0x30,N/A,ACTION_LOGGED,2025-08-26 17:59:17.065
+Voltage Test (Switches OFF),B,Set Pattern 0x30,N/A,ACTION_LOGGED,2025-08-26 17:59:19.076
+Voltage Test (Switches OFF),A,Set Pattern 0x31,N/A,ACTION_LOGGED,2025-08-26 17:59:19.079
+Voltage Test (Switches OFF),B,Set Pattern 0x31,N/A,ACTION_LOGGED,2025-08-26 17:59:21.080
+Voltage Test (Switches OFF),A,Set Pattern 0x32,N/A,ACTION_LOGGED,2025-08-26 17:59:21.096
+Voltage Test (Switches OFF),B,Set Pattern 0x32,N/A,ACTION_LOGGED,2025-08-26 17:59:23.106
+Voltage Test (Switches OFF),A,Set Pattern 0x33,N/A,ACTION_LOGGED,2025-08-26 17:59:23.110
+Voltage Test (Switches OFF),B,Set Pattern 0x33,N/A,ACTION_LOGGED,2025-08-26 17:59:25.120
+Voltage Test (Switches OFF),A,Set Pattern 0x34,N/A,ACTION_LOGGED,2025-08-26 17:59:25.126
+Voltage Test (Switches OFF),B,Set Pattern 0x34,N/A,ACTION_LOGGED,2025-08-26 17:59:27.136
+Voltage Test (Switches OFF),A,Set Pattern 0x35,N/A,ACTION_LOGGED,2025-08-26 17:59:27.141
+Voltage Test (Switches OFF),B,Set Pattern 0x35,N/A,ACTION_LOGGED,2025-08-26 17:59:29.150
+Voltage Test (Switches OFF),A,Set Pattern 0x36,N/A,ACTION_LOGGED,2025-08-26 17:59:29.166
+Voltage Test (Switches OFF),B,Set Pattern 0x36,N/A,ACTION_LOGGED,2025-08-26 17:59:31.176
+Voltage Test (Switches OFF),A,Set Pattern 0x37,N/A,ACTION_LOGGED,2025-08-26 17:59:31.181
+Voltage Test (Switches OFF),B,Set Pattern 0x37,N/A,ACTION_LOGGED,2025-08-26 17:59:33.191
+Voltage Test (Switches OFF),A,Set Pattern 0x38,N/A,ACTION_LOGGED,2025-08-26 17:59:33.197
+Voltage Test (Switches OFF),B,Set Pattern 0x38,N/A,ACTION_LOGGED,2025-08-26 17:59:35.207
+Voltage Test (Switches OFF),A,Set Pattern 0x39,N/A,ACTION_LOGGED,2025-08-26 17:59:35.221
+Voltage Test (Switches OFF),B,Set Pattern 0x39,N/A,ACTION_LOGGED,2025-08-26 17:59:37.225
+Voltage Test (Switches OFF),A,Set Pattern 0x3A,N/A,ACTION_LOGGED,2025-08-26 17:59:37.236
+Voltage Test (Switches OFF),B,Set Pattern 0x3A,N/A,ACTION_LOGGED,2025-08-26 17:59:39.244
+Voltage Test (Switches OFF),A,Set Pattern 0x3B,N/A,ACTION_LOGGED,2025-08-26 17:59:39.260
+Voltage Test (Switches OFF),B,Set Pattern 0x3B,N/A,ACTION_LOGGED,2025-08-26 17:59:41.269
+Voltage Test (Switches OFF),A,Set Pattern 0x3C,N/A,ACTION_LOGGED,2025-08-26 17:59:41.284
+Voltage Test (Switches OFF),B,Set Pattern 0x3C,N/A,ACTION_LOGGED,2025-08-26 17:59:43.288
+Voltage Test (Switches OFF),A,Set Pattern 0x3D,N/A,ACTION_LOGGED,2025-08-26 17:59:43.299
+Voltage Test (Switches OFF),B,Set Pattern 0x3D,N/A,ACTION_LOGGED,2025-08-26 17:59:45.309
+Voltage Test (Switches OFF),A,Set Pattern 0x3E,N/A,ACTION_LOGGED,2025-08-26 17:59:45.323
+Voltage Test (Switches OFF),B,Set Pattern 0x3E,N/A,ACTION_LOGGED,2025-08-26 17:59:47.332
+Voltage Test (Switches OFF),A,Set Pattern 0x3F,N/A,ACTION_LOGGED,2025-08-26 17:59:47.336
+Voltage Test (Switches OFF),B,Set Pattern 0x3F,N/A,ACTION_LOGGED,2025-08-26 17:59:49.350
+Voltage Test (Switches OFF),A,Set Pattern 0x40,N/A,ACTION_LOGGED,2025-08-26 17:59:49.364
+Voltage Test (Switches OFF),B,Set Pattern 0x40,N/A,ACTION_LOGGED,2025-08-26 17:59:51.373
+Voltage Test (Switches OFF),A,Set Pattern 0x41,N/A,ACTION_LOGGED,2025-08-26 17:59:51.378
+Voltage Test (Switches OFF),B,Set Pattern 0x41,N/A,ACTION_LOGGED,2025-08-26 17:59:53.388
+Voltage Test (Switches OFF),A,Set Pattern 0x42,N/A,ACTION_LOGGED,2025-08-26 17:59:53.394
+Voltage Test (Switches OFF),B,Set Pattern 0x42,N/A,ACTION_LOGGED,2025-08-26 17:59:55.404
+Voltage Test (Switches OFF),A,Set Pattern 0x43,N/A,ACTION_LOGGED,2025-08-26 17:59:55.408
+Voltage Test (Switches OFF),B,Set Pattern 0x43,N/A,ACTION_LOGGED,2025-08-26 17:59:57.418
+Voltage Test (Switches OFF),A,Set Pattern 0x44,N/A,ACTION_LOGGED,2025-08-26 17:59:57.425
+Voltage Test (Switches OFF),B,Set Pattern 0x44,N/A,ACTION_LOGGED,2025-08-26 17:59:59.426
+Voltage Test (Switches OFF),A,Set Pattern 0x45,N/A,ACTION_LOGGED,2025-08-26 17:59:59.440
+Voltage Test (Switches OFF),B,Set Pattern 0x45,N/A,ACTION_LOGGED,2025-08-26 18:00:01.447
+Voltage Test (Switches OFF),A,Set Pattern 0x46,N/A,ACTION_LOGGED,2025-08-26 18:00:01.454
+Voltage Test (Switches OFF),B,Set Pattern 0x46,N/A,ACTION_LOGGED,2025-08-26 18:00:03.457
+Voltage Test (Switches OFF),A,Set Pattern 0x47,N/A,ACTION_LOGGED,2025-08-26 18:00:03.467
+Voltage Test (Switches OFF),B,Set Pattern 0x47,N/A,ACTION_LOGGED,2025-08-26 18:00:05.478
+Voltage Test (Switches OFF),A,Set Pattern 0x48,N/A,ACTION_LOGGED,2025-08-26 18:00:05.482
+Voltage Test (Switches OFF),B,Set Pattern 0x48,N/A,ACTION_LOGGED,2025-08-26 18:00:07.492
+Voltage Test (Switches OFF),A,Set Pattern 0x49,N/A,ACTION_LOGGED,2025-08-26 18:00:07.508
+Voltage Test (Switches OFF),B,Set Pattern 0x49,N/A,ACTION_LOGGED,2025-08-26 18:00:09.515
+Voltage Test (Switches OFF),A,Set Pattern 0x4A,N/A,ACTION_LOGGED,2025-08-26 18:00:09.522
+Voltage Test (Switches OFF),B,Set Pattern 0x4A,N/A,ACTION_LOGGED,2025-08-26 18:00:11.524
+Voltage Test (Switches OFF),A,Set Pattern 0x4B,N/A,ACTION_LOGGED,2025-08-26 18:00:11.537
+Voltage Test (Switches OFF),B,Set Pattern 0x4B,N/A,ACTION_LOGGED,2025-08-26 18:00:13.541
+Voltage Test (Switches OFF),A,Set Pattern 0x4C,N/A,ACTION_LOGGED,2025-08-26 18:00:13.551
+Voltage Test (Switches OFF),B,Set Pattern 0x4C,N/A,ACTION_LOGGED,2025-08-26 18:00:15.562
+Voltage Test (Switches OFF),A,Set Pattern 0x4D,N/A,ACTION_LOGGED,2025-08-26 18:00:15.566
+Voltage Test (Switches OFF),B,Set Pattern 0x4D,N/A,ACTION_LOGGED,2025-08-26 18:00:17.575
+Voltage Test (Switches OFF),A,Set Pattern 0x4E,N/A,ACTION_LOGGED,2025-08-26 18:00:17.592
+Voltage Test (Switches OFF),B,Set Pattern 0x4E,N/A,ACTION_LOGGED,2025-08-26 18:00:19.596
+Voltage Test (Switches OFF),A,Set Pattern 0x4F,N/A,ACTION_LOGGED,2025-08-26 18:00:19.616
+Voltage Test (Switches OFF),B,Set Pattern 0x4F,N/A,ACTION_LOGGED,2025-08-26 18:00:21.624
+Voltage Test (Switches OFF),A,Set Pattern 0x50,N/A,ACTION_LOGGED,2025-08-26 18:00:21.630
+Voltage Test (Switches OFF),B,Set Pattern 0x50,N/A,ACTION_LOGGED,2025-08-26 18:00:23.641
+Voltage Test (Switches OFF),A,Set Pattern 0x51,N/A,ACTION_LOGGED,2025-08-26 18:00:23.644
+Voltage Test (Switches OFF),B,Set Pattern 0x51,N/A,ACTION_LOGGED,2025-08-26 18:00:25.654
+Voltage Test (Switches OFF),A,Set Pattern 0x52,N/A,ACTION_LOGGED,2025-08-26 18:00:25.661
+Voltage Test (Switches OFF),B,Set Pattern 0x52,N/A,ACTION_LOGGED,2025-08-26 18:00:27.672
+Voltage Test (Switches OFF),A,Set Pattern 0x53,N/A,ACTION_LOGGED,2025-08-26 18:00:27.675
+Voltage Test (Switches OFF),B,Set Pattern 0x53,N/A,ACTION_LOGGED,2025-08-26 18:00:29.679
+Voltage Test (Switches OFF),A,Set Pattern 0x54,N/A,ACTION_LOGGED,2025-08-26 18:00:29.692
+Voltage Test (Switches OFF),B,Set Pattern 0x54,N/A,ACTION_LOGGED,2025-08-26 18:00:31.702
+Voltage Test (Switches OFF),A,Set Pattern 0x55,N/A,ACTION_LOGGED,2025-08-26 18:00:31.716
+Voltage Test (Switches OFF),B,Set Pattern 0x55,N/A,ACTION_LOGGED,2025-08-26 18:00:33.727
+Voltage Test (Switches OFF),A,Set Pattern 0x56,N/A,ACTION_LOGGED,2025-08-26 18:00:33.740
+Voltage Test (Switches OFF),B,Set Pattern 0x56,N/A,ACTION_LOGGED,2025-08-26 18:00:35.750
+Voltage Test (Switches OFF),A,Set Pattern 0x57,N/A,ACTION_LOGGED,2025-08-26 18:00:35.754
+Voltage Test (Switches OFF),B,Set Pattern 0x57,N/A,ACTION_LOGGED,2025-08-26 18:00:37.765
+Voltage Test (Switches OFF),A,Set Pattern 0x58,N/A,ACTION_LOGGED,2025-08-26 18:00:37.771
+Voltage Test (Switches OFF),B,Set Pattern 0x58,N/A,ACTION_LOGGED,2025-08-26 18:00:39.782
+Voltage Test (Switches OFF),A,Set Pattern 0x59,N/A,ACTION_LOGGED,2025-08-26 18:00:39.795
+Voltage Test (Switches OFF),B,Set Pattern 0x59,N/A,ACTION_LOGGED,2025-08-26 18:00:41.805
+Voltage Test (Switches OFF),A,Set Pattern 0x5A,N/A,ACTION_LOGGED,2025-08-26 18:00:41.819
+Voltage Test (Switches OFF),B,Set Pattern 0x5A,N/A,ACTION_LOGGED,2025-08-26 18:00:43.829
+Voltage Test (Switches OFF),A,Set Pattern 0x5B,N/A,ACTION_LOGGED,2025-08-26 18:00:43.833
+Voltage Test (Switches OFF),B,Set Pattern 0x5B,N/A,ACTION_LOGGED,2025-08-26 18:00:45.842
+Voltage Test (Switches OFF),A,Set Pattern 0x5C,N/A,ACTION_LOGGED,2025-08-26 18:00:45.860
+Voltage Test (Switches OFF),B,Set Pattern 0x5C,N/A,ACTION_LOGGED,2025-08-26 18:00:47.870
+Voltage Test (Switches OFF),A,Set Pattern 0x5D,N/A,ACTION_LOGGED,2025-08-26 18:00:47.874
+Voltage Test (Switches OFF),B,Set Pattern 0x5D,N/A,ACTION_LOGGED,2025-08-26 18:00:49.883
+Voltage Test (Switches OFF),A,Set Pattern 0x5E,N/A,ACTION_LOGGED,2025-08-26 18:00:49.901
+Voltage Test (Switches OFF),B,Set Pattern 0x5E,N/A,ACTION_LOGGED,2025-08-26 18:00:51.911
+Voltage Test (Switches OFF),A,Set Pattern 0x5F,N/A,ACTION_LOGGED,2025-08-26 18:00:51.924
+Voltage Test (Switches OFF),B,Set Pattern 0x5F,N/A,ACTION_LOGGED,2025-08-26 18:00:53.935
+Voltage Test (Switches OFF),A,Set Pattern 0x60,N/A,ACTION_LOGGED,2025-08-26 18:00:53.948
+Voltage Test (Switches OFF),B,Set Pattern 0x60,N/A,ACTION_LOGGED,2025-08-26 18:00:55.951
+Voltage Test (Switches OFF),A,Set Pattern 0x61,N/A,ACTION_LOGGED,2025-08-26 18:00:55.972
+Voltage Test (Switches OFF),B,Set Pattern 0x61,N/A,ACTION_LOGGED,2025-08-26 18:00:57.976
+Voltage Test (Switches OFF),A,Set Pattern 0x62,N/A,ACTION_LOGGED,2025-08-26 18:00:57.987
+Voltage Test (Switches OFF),B,Set Pattern 0x62,N/A,ACTION_LOGGED,2025-08-26 18:00:59.989
+Voltage Test (Switches OFF),A,Set Pattern 0x63,N/A,ACTION_LOGGED,2025-08-26 18:01:00.011
+Voltage Test (Switches OFF),B,Set Pattern 0x63,N/A,ACTION_LOGGED,2025-08-26 18:01:02.016
+Voltage Test (Switches OFF),A,Set Pattern 0x64,N/A,ACTION_LOGGED,2025-08-26 18:01:02.025
+Voltage Test (Switches OFF),B,Set Pattern 0x64,N/A,ACTION_LOGGED,2025-08-26 18:01:04.036
+Voltage Test (Switches OFF),A,Set Pattern 0x65,N/A,ACTION_LOGGED,2025-08-26 18:01:04.050
+Voltage Test (Switches OFF),B,Set Pattern 0x65,N/A,ACTION_LOGGED,2025-08-26 18:01:06.053
+Voltage Test (Switches OFF),A,Set Pattern 0x66,N/A,ACTION_LOGGED,2025-08-26 18:01:06.064
+Voltage Test (Switches OFF),B,Set Pattern 0x66,N/A,ACTION_LOGGED,2025-08-26 18:01:08.074
+Voltage Test (Switches OFF),A,Set Pattern 0x67,N/A,ACTION_LOGGED,2025-08-26 18:01:08.078
+Voltage Test (Switches OFF),B,Set Pattern 0x67,N/A,ACTION_LOGGED,2025-08-26 18:01:10.088
+Voltage Test (Switches OFF),A,Set Pattern 0x68,N/A,ACTION_LOGGED,2025-08-26 18:01:10.104
+Voltage Test (Switches OFF),B,Set Pattern 0x68,N/A,ACTION_LOGGED,2025-08-26 18:01:12.114
+Voltage Test (Switches OFF),A,Set Pattern 0x69,N/A,ACTION_LOGGED,2025-08-26 18:01:12.128
+Voltage Test (Switches OFF),B,Set Pattern 0x69,N/A,ACTION_LOGGED,2025-08-26 18:01:14.138
+Voltage Test (Switches OFF),A,Set Pattern 0x6A,N/A,ACTION_LOGGED,2025-08-26 18:01:14.143
+Voltage Test (Switches OFF),B,Set Pattern 0x6A,N/A,ACTION_LOGGED,2025-08-26 18:01:16.154
+Voltage Test (Switches OFF),A,Set Pattern 0x6B,N/A,ACTION_LOGGED,2025-08-26 18:01:16.169
+Voltage Test (Switches OFF),B,Set Pattern 0x6B,N/A,ACTION_LOGGED,2025-08-26 18:01:18.179
+Voltage Test (Switches OFF),A,Set Pattern 0x6C,N/A,ACTION_LOGGED,2025-08-26 18:01:18.184
+Voltage Test (Switches OFF),B,Set Pattern 0x6C,N/A,ACTION_LOGGED,2025-08-26 18:01:20.185
+Voltage Test (Switches OFF),A,Set Pattern 0x6D,N/A,ACTION_LOGGED,2025-08-26 18:01:20.210
+Voltage Test (Switches OFF),B,Set Pattern 0x6D,N/A,ACTION_LOGGED,2025-08-26 18:01:22.220
+Voltage Test (Switches OFF),A,Set Pattern 0x6E,N/A,ACTION_LOGGED,2025-08-26 18:01:22.224
+Voltage Test (Switches OFF),B,Set Pattern 0x6E,N/A,ACTION_LOGGED,2025-08-26 18:01:24.235
+Voltage Test (Switches OFF),A,Set Pattern 0x6F,N/A,ACTION_LOGGED,2025-08-26 18:01:24.250
+Voltage Test (Switches OFF),B,Set Pattern 0x6F,N/A,ACTION_LOGGED,2025-08-26 18:01:26.259
+Voltage Test (Switches OFF),A,Set Pattern 0x70,N/A,ACTION_LOGGED,2025-08-26 18:01:26.275
+Voltage Test (Switches OFF),B,Set Pattern 0x70,N/A,ACTION_LOGGED,2025-08-26 18:01:28.285
+Voltage Test (Switches OFF),A,Set Pattern 0x71,N/A,ACTION_LOGGED,2025-08-26 18:01:28.298
+Voltage Test (Switches OFF),B,Set Pattern 0x71,N/A,ACTION_LOGGED,2025-08-26 18:01:30.308
+Voltage Test (Switches OFF),A,Set Pattern 0x72,N/A,ACTION_LOGGED,2025-08-26 18:01:30.313
+Voltage Test (Switches OFF),B,Set Pattern 0x72,N/A,ACTION_LOGGED,2025-08-26 18:01:32.322
+Voltage Test (Switches OFF),A,Set Pattern 0x73,N/A,ACTION_LOGGED,2025-08-26 18:01:32.338
+Voltage Test (Switches OFF),B,Set Pattern 0x73,N/A,ACTION_LOGGED,2025-08-26 18:01:34.349
+Voltage Test (Switches OFF),A,Set Pattern 0x74,N/A,ACTION_LOGGED,2025-08-26 18:01:34.352
+Voltage Test (Switches OFF),B,Set Pattern 0x74,N/A,ACTION_LOGGED,2025-08-26 18:01:36.366
+Voltage Test (Switches OFF),A,Set Pattern 0x75,N/A,ACTION_LOGGED,2025-08-26 18:01:36.371
+Voltage Test (Switches OFF),B,Set Pattern 0x75,N/A,ACTION_LOGGED,2025-08-26 18:01:38.375
+Voltage Test (Switches OFF),A,Set Pattern 0x76,N/A,ACTION_LOGGED,2025-08-26 18:01:38.387
+Voltage Test (Switches OFF),B,Set Pattern 0x76,N/A,ACTION_LOGGED,2025-08-26 18:01:40.397
+Voltage Test (Switches OFF),A,Set Pattern 0x77,N/A,ACTION_LOGGED,2025-08-26 18:01:40.402
+Voltage Test (Switches OFF),B,Set Pattern 0x77,N/A,ACTION_LOGGED,2025-08-26 18:01:42.408
+Voltage Test (Switches OFF),A,Set Pattern 0x78,N/A,ACTION_LOGGED,2025-08-26 18:01:42.418
+Voltage Test (Switches OFF),B,Set Pattern 0x78,N/A,ACTION_LOGGED,2025-08-26 18:01:44.428
+Voltage Test (Switches OFF),A,Set Pattern 0x79,N/A,ACTION_LOGGED,2025-08-26 18:01:44.433
+Voltage Test (Switches OFF),B,Set Pattern 0x79,N/A,ACTION_LOGGED,2025-08-26 18:01:46.441
+Voltage Test (Switches OFF),A,Set Pattern 0x7A,N/A,ACTION_LOGGED,2025-08-26 18:01:46.449
+Voltage Test (Switches OFF),B,Set Pattern 0x7A,N/A,ACTION_LOGGED,2025-08-26 18:01:48.453
+Voltage Test (Switches OFF),A,Set Pattern 0x7B,N/A,ACTION_LOGGED,2025-08-26 18:01:48.473
+Voltage Test (Switches OFF),B,Set Pattern 0x7B,N/A,ACTION_LOGGED,2025-08-26 18:01:50.481
+Voltage Test (Switches OFF),A,Set Pattern 0x7C,N/A,ACTION_LOGGED,2025-08-26 18:01:50.497
+Voltage Test (Switches OFF),B,Set Pattern 0x7C,N/A,ACTION_LOGGED,2025-08-26 18:01:52.508
+Voltage Test (Switches OFF),A,Set Pattern 0x7D,N/A,ACTION_LOGGED,2025-08-26 18:01:52.512
+Voltage Test (Switches OFF),B,Set Pattern 0x7D,N/A,ACTION_LOGGED,2025-08-26 18:01:54.523
+Voltage Test (Switches OFF),A,Set Pattern 0x7E,N/A,ACTION_LOGGED,2025-08-26 18:01:54.538
+Voltage Test (Switches OFF),B,Set Pattern 0x7E,N/A,ACTION_LOGGED,2025-08-26 18:01:56.549
+Voltage Test (Switches OFF),A,Set Pattern 0x7F,N/A,ACTION_LOGGED,2025-08-26 18:01:56.553
+Voltage Test (Switches OFF),B,Set Pattern 0x7F,N/A,ACTION_LOGGED,2025-08-26 18:01:58.560
+Voltage Test (Switches OFF),A,Set Pattern 0x80,N/A,ACTION_LOGGED,2025-08-26 18:01:58.570
+Voltage Test (Switches OFF),B,Set Pattern 0x80,N/A,ACTION_LOGGED,2025-08-26 18:02:00.571
+Voltage Test (Switches OFF),A,Set Pattern 0x81,N/A,ACTION_LOGGED,2025-08-26 18:02:00.594
+Voltage Test (Switches OFF),B,Set Pattern 0x81,N/A,ACTION_LOGGED,2025-08-26 18:02:02.596
+Voltage Test (Switches OFF),A,Set Pattern 0x82,N/A,ACTION_LOGGED,2025-08-26 18:02:02.618
+Voltage Test (Switches OFF),B,Set Pattern 0x82,N/A,ACTION_LOGGED,2025-08-26 18:02:04.627
+Voltage Test (Switches OFF),A,Set Pattern 0x83,N/A,ACTION_LOGGED,2025-08-26 18:02:04.632
+Voltage Test (Switches OFF),B,Set Pattern 0x83,N/A,ACTION_LOGGED,2025-08-26 18:02:06.637
+Voltage Test (Switches OFF),A,Set Pattern 0x84,N/A,ACTION_LOGGED,2025-08-26 18:02:06.648
+Voltage Test (Switches OFF),B,Set Pattern 0x84,N/A,ACTION_LOGGED,2025-08-26 18:02:08.654
+Voltage Test (Switches OFF),A,Set Pattern 0x85,N/A,ACTION_LOGGED,2025-08-26 18:02:08.663
+Voltage Test (Switches OFF),B,Set Pattern 0x85,N/A,ACTION_LOGGED,2025-08-26 18:02:10.673
+Voltage Test (Switches OFF),A,Set Pattern 0x86,N/A,ACTION_LOGGED,2025-08-26 18:02:10.687
+Voltage Test (Switches OFF),B,Set Pattern 0x86,N/A,ACTION_LOGGED,2025-08-26 18:02:12.697
+Voltage Test (Switches OFF),A,Set Pattern 0x87,N/A,ACTION_LOGGED,2025-08-26 18:02:12.711
+Voltage Test (Switches OFF),B,Set Pattern 0x87,N/A,ACTION_LOGGED,2025-08-26 18:02:14.712
+Voltage Test (Switches OFF),A,Set Pattern 0x88,N/A,ACTION_LOGGED,2025-08-26 18:02:14.724
+Voltage Test (Switches OFF),B,Set Pattern 0x88,N/A,ACTION_LOGGED,2025-08-26 18:02:16.735
+Voltage Test (Switches OFF),A,Set Pattern 0x89,N/A,ACTION_LOGGED,2025-08-26 18:02:16.739
+Voltage Test (Switches OFF),B,Set Pattern 0x89,N/A,ACTION_LOGGED,2025-08-26 18:02:18.740
+Voltage Test (Switches OFF),A,Set Pattern 0x8A,N/A,ACTION_LOGGED,2025-08-26 18:02:18.757
+Voltage Test (Switches OFF),B,Set Pattern 0x8A,N/A,ACTION_LOGGED,2025-08-26 18:02:20.760
+Voltage Test (Switches OFF),A,Set Pattern 0x8B,N/A,ACTION_LOGGED,2025-08-26 18:02:20.771
+Voltage Test (Switches OFF),B,Set Pattern 0x8B,N/A,ACTION_LOGGED,2025-08-26 18:02:22.776
+Voltage Test (Switches OFF),A,Set Pattern 0x8C,N/A,ACTION_LOGGED,2025-08-26 18:02:22.786
+Voltage Test (Switches OFF),B,Set Pattern 0x8C,N/A,ACTION_LOGGED,2025-08-26 18:02:24.796
+Voltage Test (Switches OFF),A,Set Pattern 0x8D,N/A,ACTION_LOGGED,2025-08-26 18:02:24.800
+Voltage Test (Switches OFF),B,Set Pattern 0x8D,N/A,ACTION_LOGGED,2025-08-26 18:02:26.811
+Voltage Test (Switches OFF),A,Set Pattern 0x8E,N/A,ACTION_LOGGED,2025-08-26 18:02:26.817
+Voltage Test (Switches OFF),B,Set Pattern 0x8E,N/A,ACTION_LOGGED,2025-08-26 18:02:28.824
+Voltage Test (Switches OFF),A,Set Pattern 0x8F,N/A,ACTION_LOGGED,2025-08-26 18:02:28.831
+Voltage Test (Switches OFF),B,Set Pattern 0x8F,N/A,ACTION_LOGGED,2025-08-26 18:02:30.840
+Voltage Test (Switches OFF),A,Set Pattern 0x90,N/A,ACTION_LOGGED,2025-08-26 18:02:30.856
+Voltage Test (Switches OFF),B,Set Pattern 0x90,N/A,ACTION_LOGGED,2025-08-26 18:02:32.861
+Voltage Test (Switches OFF),A,Set Pattern 0x91,N/A,ACTION_LOGGED,2025-08-26 18:02:32.870
+Voltage Test (Switches OFF),B,Set Pattern 0x91,N/A,ACTION_LOGGED,2025-08-26 18:02:34.880
+Voltage Test (Switches OFF),A,Set Pattern 0x92,N/A,ACTION_LOGGED,2025-08-26 18:02:34.884
+Voltage Test (Switches OFF),B,Set Pattern 0x92,N/A,ACTION_LOGGED,2025-08-26 18:02:36.899
+Voltage Test (Switches OFF),A,Set Pattern 0x93,N/A,ACTION_LOGGED,2025-08-26 18:02:36.903
+Voltage Test (Switches OFF),B,Set Pattern 0x93,N/A,ACTION_LOGGED,2025-08-26 18:02:38.906
+Voltage Test (Switches OFF),A,Set Pattern 0x94,N/A,ACTION_LOGGED,2025-08-26 18:02:38.920
+Voltage Test (Switches OFF),B,Set Pattern 0x94,N/A,ACTION_LOGGED,2025-08-26 18:02:40.931
+Voltage Test (Switches OFF),A,Set Pattern 0x95,N/A,ACTION_LOGGED,2025-08-26 18:02:40.944
+Voltage Test (Switches OFF),B,Set Pattern 0x95,N/A,ACTION_LOGGED,2025-08-26 18:02:42.948
+Voltage Test (Switches OFF),A,Set Pattern 0x96,N/A,ACTION_LOGGED,2025-08-26 18:02:42.968
+Voltage Test (Switches OFF),B,Set Pattern 0x96,N/A,ACTION_LOGGED,2025-08-26 18:02:44.979
+Voltage Test (Switches OFF),A,Set Pattern 0x97,N/A,ACTION_LOGGED,2025-08-26 18:02:44.992
+Voltage Test (Switches OFF),B,Set Pattern 0x97,N/A,ACTION_LOGGED,2025-08-26 18:02:47.003
+Voltage Test (Switches OFF),A,Set Pattern 0x98,N/A,ACTION_LOGGED,2025-08-26 18:02:47.017
+Voltage Test (Switches OFF),B,Set Pattern 0x98,N/A,ACTION_LOGGED,2025-08-26 18:02:49.019
+Voltage Test (Switches OFF),A,Set Pattern 0x99,N/A,ACTION_LOGGED,2025-08-26 18:02:49.040
+Voltage Test (Switches OFF),B,Set Pattern 0x99,N/A,ACTION_LOGGED,2025-08-26 18:02:51.051
+Voltage Test (Switches OFF),A,Set Pattern 0x9A,N/A,ACTION_LOGGED,2025-08-26 18:02:51.065
+Voltage Test (Switches OFF),B,Set Pattern 0x9A,N/A,ACTION_LOGGED,2025-08-26 18:02:53.075
+Voltage Test (Switches OFF),A,Set Pattern 0x9B,N/A,ACTION_LOGGED,2025-08-26 18:02:53.080
+Voltage Test (Switches OFF),B,Set Pattern 0x9B,N/A,ACTION_LOGGED,2025-08-26 18:02:55.090
+Voltage Test (Switches OFF),A,Set Pattern 0x9C,N/A,ACTION_LOGGED,2025-08-26 18:02:55.096
+Voltage Test (Switches OFF),B,Set Pattern 0x9C,N/A,ACTION_LOGGED,2025-08-26 18:02:57.097
+Voltage Test (Switches OFF),A,Set Pattern 0x9D,N/A,ACTION_LOGGED,2025-08-26 18:02:57.111
+Voltage Test (Switches OFF),B,Set Pattern 0x9D,N/A,ACTION_LOGGED,2025-08-26 18:02:59.121
+Voltage Test (Switches OFF),A,Set Pattern 0x9E,N/A,ACTION_LOGGED,2025-08-26 18:02:59.126
+Voltage Test (Switches OFF),B,Set Pattern 0x9E,N/A,ACTION_LOGGED,2025-08-26 18:03:01.136
+Voltage Test (Switches OFF),A,Set Pattern 0x9F,N/A,ACTION_LOGGED,2025-08-26 18:03:01.152
+Voltage Test (Switches OFF),B,Set Pattern 0x9F,N/A,ACTION_LOGGED,2025-08-26 18:03:03.162
+Voltage Test (Switches OFF),A,Set Pattern 0xA0,N/A,ACTION_LOGGED,2025-08-26 18:03:03.175
+Voltage Test (Switches OFF),B,Set Pattern 0xA0,N/A,ACTION_LOGGED,2025-08-26 18:03:05.185
+Voltage Test (Switches OFF),A,Set Pattern 0xA1,N/A,ACTION_LOGGED,2025-08-26 18:03:05.189
+Voltage Test (Switches OFF),B,Set Pattern 0xA1,N/A,ACTION_LOGGED,2025-08-26 18:03:07.194
+Voltage Test (Switches OFF),A,Set Pattern 0xA2,N/A,ACTION_LOGGED,2025-08-26 18:03:07.216
+Voltage Test (Switches OFF),B,Set Pattern 0xA2,N/A,ACTION_LOGGED,2025-08-26 18:03:09.226
+Voltage Test (Switches OFF),A,Set Pattern 0xA3,N/A,ACTION_LOGGED,2025-08-26 18:03:09.231
+Voltage Test (Switches OFF),B,Set Pattern 0xA3,N/A,ACTION_LOGGED,2025-08-26 18:03:11.238
+Voltage Test (Switches OFF),A,Set Pattern 0xA4,N/A,ACTION_LOGGED,2025-08-26 18:03:11.246
+Voltage Test (Switches OFF),B,Set Pattern 0xA4,N/A,ACTION_LOGGED,2025-08-26 18:03:13.247
+Voltage Test (Switches OFF),A,Set Pattern 0xA5,N/A,ACTION_LOGGED,2025-08-26 18:03:13.261
+Voltage Test (Switches OFF),B,Set Pattern 0xA5,N/A,ACTION_LOGGED,2025-08-26 18:03:15.271
+Voltage Test (Switches OFF),A,Set Pattern 0xA6,N/A,ACTION_LOGGED,2025-08-26 18:03:15.285
+Voltage Test (Switches OFF),B,Set Pattern 0xA6,N/A,ACTION_LOGGED,2025-08-26 18:03:17.293
+Voltage Test (Switches OFF),A,Set Pattern 0xA7,N/A,ACTION_LOGGED,2025-08-26 18:03:17.309
+Voltage Test (Switches OFF),B,Set Pattern 0xA7,N/A,ACTION_LOGGED,2025-08-26 18:03:19.318
+Voltage Test (Switches OFF),A,Set Pattern 0xA8,N/A,ACTION_LOGGED,2025-08-26 18:03:19.332
+Voltage Test (Switches OFF),B,Set Pattern 0xA8,N/A,ACTION_LOGGED,2025-08-26 18:03:21.335
+Voltage Test (Switches OFF),A,Set Pattern 0xA9,N/A,ACTION_LOGGED,2025-08-26 18:03:21.347
+Voltage Test (Switches OFF),B,Set Pattern 0xA9,N/A,ACTION_LOGGED,2025-08-26 18:03:23.351
+Voltage Test (Switches OFF),A,Set Pattern 0xAA,N/A,ACTION_LOGGED,2025-08-26 18:03:23.362
+Voltage Test (Switches OFF),B,Set Pattern 0xAA,N/A,ACTION_LOGGED,2025-08-26 18:03:25.372
+Voltage Test (Switches OFF),A,Set Pattern 0xAB,N/A,ACTION_LOGGED,2025-08-26 18:03:25.376
+Voltage Test (Switches OFF),B,Set Pattern 0xAB,N/A,ACTION_LOGGED,2025-08-26 18:03:27.384
+Voltage Test (Switches OFF),A,Set Pattern 0xAC,N/A,ACTION_LOGGED,2025-08-26 18:03:27.393
+Voltage Test (Switches OFF),B,Set Pattern 0xAC,N/A,ACTION_LOGGED,2025-08-26 18:03:29.403
+Voltage Test (Switches OFF),A,Set Pattern 0xAD,N/A,ACTION_LOGGED,2025-08-26 18:03:29.416
+Voltage Test (Switches OFF),B,Set Pattern 0xAD,N/A,ACTION_LOGGED,2025-08-26 18:03:31.418
+Voltage Test (Switches OFF),A,Set Pattern 0xAE,N/A,ACTION_LOGGED,2025-08-26 18:03:31.431
+Voltage Test (Switches OFF),B,Set Pattern 0xAE,N/A,ACTION_LOGGED,2025-08-26 18:03:33.442
+Voltage Test (Switches OFF),A,Set Pattern 0xAF,N/A,ACTION_LOGGED,2025-08-26 18:03:33.446
+Voltage Test (Switches OFF),B,Set Pattern 0xAF,N/A,ACTION_LOGGED,2025-08-26 18:03:35.451
+Voltage Test (Switches OFF),A,Set Pattern 0xB0,N/A,ACTION_LOGGED,2025-08-26 18:03:35.472
+Voltage Test (Switches OFF),B,Set Pattern 0xB0,N/A,ACTION_LOGGED,2025-08-26 18:03:37.483
+Voltage Test (Switches OFF),A,Set Pattern 0xB1,N/A,ACTION_LOGGED,2025-08-26 18:03:37.487
+Voltage Test (Switches OFF),B,Set Pattern 0xB1,N/A,ACTION_LOGGED,2025-08-26 18:03:39.491
+Voltage Test (Switches OFF),A,Set Pattern 0xB2,N/A,ACTION_LOGGED,2025-08-26 18:03:39.513
+Voltage Test (Switches OFF),B,Set Pattern 0xB2,N/A,ACTION_LOGGED,2025-08-26 18:03:41.516
+Voltage Test (Switches OFF),A,Set Pattern 0xB3,N/A,ACTION_LOGGED,2025-08-26 18:03:41.537
+Voltage Test (Switches OFF),B,Set Pattern 0xB3,N/A,ACTION_LOGGED,2025-08-26 18:03:43.541
+Voltage Test (Switches OFF),A,Set Pattern 0xB4,N/A,ACTION_LOGGED,2025-08-26 18:03:43.561
+Voltage Test (Switches OFF),B,Set Pattern 0xB4,N/A,ACTION_LOGGED,2025-08-26 18:03:45.565
+Voltage Test (Switches OFF),A,Set Pattern 0xB5,N/A,ACTION_LOGGED,2025-08-26 18:03:45.576
+Voltage Test (Switches OFF),B,Set Pattern 0xB5,N/A,ACTION_LOGGED,2025-08-26 18:03:47.584
+Voltage Test (Switches OFF),A,Set Pattern 0xB6,N/A,ACTION_LOGGED,2025-08-26 18:03:47.601
+Voltage Test (Switches OFF),B,Set Pattern 0xB6,N/A,ACTION_LOGGED,2025-08-26 18:03:49.604
+Voltage Test (Switches OFF),A,Set Pattern 0xB7,N/A,ACTION_LOGGED,2025-08-26 18:03:49.615
+Voltage Test (Switches OFF),B,Set Pattern 0xB7,N/A,ACTION_LOGGED,2025-08-26 18:03:51.626
+Voltage Test (Switches OFF),A,Set Pattern 0xB8,N/A,ACTION_LOGGED,2025-08-26 18:03:51.630
+Voltage Test (Switches OFF),B,Set Pattern 0xB8,N/A,ACTION_LOGGED,2025-08-26 18:03:53.640
+Voltage Test (Switches OFF),A,Set Pattern 0xB9,N/A,ACTION_LOGGED,2025-08-26 18:03:53.647
+Voltage Test (Switches OFF),B,Set Pattern 0xB9,N/A,ACTION_LOGGED,2025-08-26 18:03:55.658
+Voltage Test (Switches OFF),A,Set Pattern 0xBA,N/A,ACTION_LOGGED,2025-08-26 18:03:55.671
+Voltage Test (Switches OFF),B,Set Pattern 0xBA,N/A,ACTION_LOGGED,2025-08-26 18:03:57.676
+Voltage Test (Switches OFF),A,Set Pattern 0xBB,N/A,ACTION_LOGGED,2025-08-26 18:03:57.685
+Voltage Test (Switches OFF),B,Set Pattern 0xBB,N/A,ACTION_LOGGED,2025-08-26 18:03:59.696
+Voltage Test (Switches OFF),A,Set Pattern 0xBC,N/A,ACTION_LOGGED,2025-08-26 18:03:59.709
+Voltage Test (Switches OFF),B,Set Pattern 0xBC,N/A,ACTION_LOGGED,2025-08-26 18:04:01.719
+Voltage Test (Switches OFF),A,Set Pattern 0xBD,N/A,ACTION_LOGGED,2025-08-26 18:04:01.723
+Voltage Test (Switches OFF),B,Set Pattern 0xBD,N/A,ACTION_LOGGED,2025-08-26 18:04:03.733
+Voltage Test (Switches OFF),A,Set Pattern 0xBE,N/A,ACTION_LOGGED,2025-08-26 18:04:03.749
+Voltage Test (Switches OFF),B,Set Pattern 0xBE,N/A,ACTION_LOGGED,2025-08-26 18:04:05.759
+Voltage Test (Switches OFF),A,Set Pattern 0xBF,N/A,ACTION_LOGGED,2025-08-26 18:04:05.773
+Voltage Test (Switches OFF),B,Set Pattern 0xBF,N/A,ACTION_LOGGED,2025-08-26 18:04:07.784
+Voltage Test (Switches OFF),A,Set Pattern 0xC0,N/A,ACTION_LOGGED,2025-08-26 18:04:07.797
+Voltage Test (Switches OFF),B,Set Pattern 0xC0,N/A,ACTION_LOGGED,2025-08-26 18:04:09.807
+Voltage Test (Switches OFF),A,Set Pattern 0xC1,N/A,ACTION_LOGGED,2025-08-26 18:04:09.811
+Voltage Test (Switches OFF),B,Set Pattern 0xC1,N/A,ACTION_LOGGED,2025-08-26 18:04:11.822
+Voltage Test (Switches OFF),A,Set Pattern 0xC2,N/A,ACTION_LOGGED,2025-08-26 18:04:11.837
+Voltage Test (Switches OFF),B,Set Pattern 0xC2,N/A,ACTION_LOGGED,2025-08-26 18:04:13.840
+Voltage Test (Switches OFF),A,Set Pattern 0xC3,N/A,ACTION_LOGGED,2025-08-26 18:04:13.862
+Voltage Test (Switches OFF),B,Set Pattern 0xC3,N/A,ACTION_LOGGED,2025-08-26 18:04:15.871
+Voltage Test (Switches OFF),A,Set Pattern 0xC4,N/A,ACTION_LOGGED,2025-08-26 18:04:15.876
+Voltage Test (Switches OFF),B,Set Pattern 0xC4,N/A,ACTION_LOGGED,2025-08-26 18:04:17.885
+Voltage Test (Switches OFF),A,Set Pattern 0xC5,N/A,ACTION_LOGGED,2025-08-26 18:04:17.901
+Voltage Test (Switches OFF),B,Set Pattern 0xC5,N/A,ACTION_LOGGED,2025-08-26 18:04:19.910
+Voltage Test (Switches OFF),A,Set Pattern 0xC6,N/A,ACTION_LOGGED,2025-08-26 18:04:19.915
+Voltage Test (Switches OFF),B,Set Pattern 0xC6,N/A,ACTION_LOGGED,2025-08-26 18:04:21.926
+Voltage Test (Switches OFF),A,Set Pattern 0xC7,N/A,ACTION_LOGGED,2025-08-26 18:04:21.930
+Voltage Test (Switches OFF),B,Set Pattern 0xC7,N/A,ACTION_LOGGED,2025-08-26 18:04:23.934
+Voltage Test (Switches OFF),A,Set Pattern 0xC8,N/A,ACTION_LOGGED,2025-08-26 18:04:23.947
+Voltage Test (Switches OFF),B,Set Pattern 0xC8,N/A,ACTION_LOGGED,2025-08-26 18:04:25.957
+Voltage Test (Switches OFF),A,Set Pattern 0xC9,N/A,ACTION_LOGGED,2025-08-26 18:04:25.971
+Voltage Test (Switches OFF),B,Set Pattern 0xC9,N/A,ACTION_LOGGED,2025-08-26 18:04:27.981
+Voltage Test (Switches OFF),A,Set Pattern 0xCA,N/A,ACTION_LOGGED,2025-08-26 18:04:27.986
+Voltage Test (Switches OFF),B,Set Pattern 0xCA,N/A,ACTION_LOGGED,2025-08-26 18:04:29.990
+Voltage Test (Switches OFF),A,Set Pattern 0xCB,N/A,ACTION_LOGGED,2025-08-26 18:04:30.012
+Voltage Test (Switches OFF),B,Set Pattern 0xCB,N/A,ACTION_LOGGED,2025-08-26 18:04:32.015
+Voltage Test (Switches OFF),A,Set Pattern 0xCC,N/A,ACTION_LOGGED,2025-08-26 18:04:32.027
+Voltage Test (Switches OFF),B,Set Pattern 0xCC,N/A,ACTION_LOGGED,2025-08-26 18:04:34.037
+Voltage Test (Switches OFF),A,Set Pattern 0xCD,N/A,ACTION_LOGGED,2025-08-26 18:04:34.051
+Voltage Test (Switches OFF),B,Set Pattern 0xCD,N/A,ACTION_LOGGED,2025-08-26 18:04:36.061
+Voltage Test (Switches OFF),A,Set Pattern 0xCE,N/A,ACTION_LOGGED,2025-08-26 18:04:36.074
+Voltage Test (Switches OFF),B,Set Pattern 0xCE,N/A,ACTION_LOGGED,2025-08-26 18:04:38.085
+Voltage Test (Switches OFF),A,Set Pattern 0xCF,N/A,ACTION_LOGGED,2025-08-26 18:04:38.088
+Voltage Test (Switches OFF),B,Set Pattern 0xCF,N/A,ACTION_LOGGED,2025-08-26 18:04:40.099
+Voltage Test (Switches OFF),A,Set Pattern 0xD0,N/A,ACTION_LOGGED,2025-08-26 18:04:40.106
+Voltage Test (Switches OFF),B,Set Pattern 0xD0,N/A,ACTION_LOGGED,2025-08-26 18:04:42.113
+Voltage Test (Switches OFF),A,Set Pattern 0xD1,N/A,ACTION_LOGGED,2025-08-26 18:04:42.121
+Voltage Test (Switches OFF),B,Set Pattern 0xD1,N/A,ACTION_LOGGED,2025-08-26 18:04:44.122
+Voltage Test (Switches OFF),A,Set Pattern 0xD2,N/A,ACTION_LOGGED,2025-08-26 18:04:44.145
+Voltage Test (Switches OFF),B,Set Pattern 0xD2,N/A,ACTION_LOGGED,2025-08-26 18:04:46.150
+Voltage Test (Switches OFF),A,Set Pattern 0xD3,N/A,ACTION_LOGGED,2025-08-26 18:04:46.160
+Voltage Test (Switches OFF),B,Set Pattern 0xD3,N/A,ACTION_LOGGED,2025-08-26 18:04:48.169
+Voltage Test (Switches OFF),A,Set Pattern 0xD4,N/A,ACTION_LOGGED,2025-08-26 18:04:48.184
+Voltage Test (Switches OFF),B,Set Pattern 0xD4,N/A,ACTION_LOGGED,2025-08-26 18:04:50.190
+Voltage Test (Switches OFF),A,Set Pattern 0xD5,N/A,ACTION_LOGGED,2025-08-26 18:04:50.208
+Voltage Test (Switches OFF),B,Set Pattern 0xD5,N/A,ACTION_LOGGED,2025-08-26 18:04:52.217
+Voltage Test (Switches OFF),A,Set Pattern 0xD6,N/A,ACTION_LOGGED,2025-08-26 18:04:52.231
+Voltage Test (Switches OFF),B,Set Pattern 0xD6,N/A,ACTION_LOGGED,2025-08-26 18:04:54.241
+Voltage Test (Switches OFF),A,Set Pattern 0xD7,N/A,ACTION_LOGGED,2025-08-26 18:04:54.246
+Voltage Test (Switches OFF),B,Set Pattern 0xD7,N/A,ACTION_LOGGED,2025-08-26 18:04:56.256
+Voltage Test (Switches OFF),A,Set Pattern 0xD8,N/A,ACTION_LOGGED,2025-08-26 18:04:56.261
+Voltage Test (Switches OFF),B,Set Pattern 0xD8,N/A,ACTION_LOGGED,2025-08-26 18:04:58.266
+Voltage Test (Switches OFF),A,Set Pattern 0xD9,N/A,ACTION_LOGGED,2025-08-26 18:04:58.276
+Voltage Test (Switches OFF),B,Set Pattern 0xD9,N/A,ACTION_LOGGED,2025-08-26 18:05:00.285
+Voltage Test (Switches OFF),A,Set Pattern 0xDA,N/A,ACTION_LOGGED,2025-08-26 18:05:00.289
+Voltage Test (Switches OFF),B,Set Pattern 0xDA,N/A,ACTION_LOGGED,2025-08-26 18:05:02.291
+Voltage Test (Switches OFF),A,Set Pattern 0xDB,N/A,ACTION_LOGGED,2025-08-26 18:05:02.315
+Voltage Test (Switches OFF),B,Set Pattern 0xDB,N/A,ACTION_LOGGED,2025-08-26 18:05:04.326
+Voltage Test (Switches OFF),A,Set Pattern 0xDC,N/A,ACTION_LOGGED,2025-08-26 18:05:04.330
+Voltage Test (Switches OFF),B,Set Pattern 0xDC,N/A,ACTION_LOGGED,2025-08-26 18:05:06.340
+Voltage Test (Switches OFF),A,Set Pattern 0xDD,N/A,ACTION_LOGGED,2025-08-26 18:05:06.347
+Voltage Test (Switches OFF),B,Set Pattern 0xDD,N/A,ACTION_LOGGED,2025-08-26 18:05:08.358
+Voltage Test (Switches OFF),A,Set Pattern 0xDE,N/A,ACTION_LOGGED,2025-08-26 18:05:08.362
+Voltage Test (Switches OFF),B,Set Pattern 0xDE,N/A,ACTION_LOGGED,2025-08-26 18:05:10.372
+Voltage Test (Switches OFF),A,Set Pattern 0xDF,N/A,ACTION_LOGGED,2025-08-26 18:05:10.388
+Voltage Test (Switches OFF),B,Set Pattern 0xDF,N/A,ACTION_LOGGED,2025-08-26 18:05:12.399
+Voltage Test (Switches OFF),A,Set Pattern 0xE0,N/A,ACTION_LOGGED,2025-08-26 18:05:12.403
+Voltage Test (Switches OFF),B,Set Pattern 0xE0,N/A,ACTION_LOGGED,2025-08-26 18:05:14.411
+Voltage Test (Switches OFF),A,Set Pattern 0xE1,N/A,ACTION_LOGGED,2025-08-26 18:05:14.429
+Voltage Test (Switches OFF),B,Set Pattern 0xE1,N/A,ACTION_LOGGED,2025-08-26 18:05:16.435
+Voltage Test (Switches OFF),A,Set Pattern 0xE2,N/A,ACTION_LOGGED,2025-08-26 18:05:16.453
+Voltage Test (Switches OFF),B,Set Pattern 0xE2,N/A,ACTION_LOGGED,2025-08-26 18:05:18.463
+Voltage Test (Switches OFF),A,Set Pattern 0xE3,N/A,ACTION_LOGGED,2025-08-26 18:05:18.467
+Voltage Test (Switches OFF),B,Set Pattern 0xE3,N/A,ACTION_LOGGED,2025-08-26 18:05:20.478
+Voltage Test (Switches OFF),A,Set Pattern 0xE4,N/A,ACTION_LOGGED,2025-08-26 18:05:20.484
+Voltage Test (Switches OFF),B,Set Pattern 0xE4,N/A,ACTION_LOGGED,2025-08-26 18:05:22.495
+Voltage Test (Switches OFF),A,Set Pattern 0xE5,N/A,ACTION_LOGGED,2025-08-26 18:05:22.508
+Voltage Test (Switches OFF),B,Set Pattern 0xE5,N/A,ACTION_LOGGED,2025-08-26 18:05:24.518
+Voltage Test (Switches OFF),A,Set Pattern 0xE6,N/A,ACTION_LOGGED,2025-08-26 18:05:24.532
+Voltage Test (Switches OFF),B,Set Pattern 0xE6,N/A,ACTION_LOGGED,2025-08-26 18:05:26.543
+Voltage Test (Switches OFF),A,Set Pattern 0xE7,N/A,ACTION_LOGGED,2025-08-26 18:05:26.556
+Voltage Test (Switches OFF),B,Set Pattern 0xE7,N/A,ACTION_LOGGED,2025-08-26 18:05:28.566
+Voltage Test (Switches OFF),A,Set Pattern 0xE8,N/A,ACTION_LOGGED,2025-08-26 18:05:28.569
+Voltage Test (Switches OFF),B,Set Pattern 0xE8,N/A,ACTION_LOGGED,2025-08-26 18:05:30.580
+Voltage Test (Switches OFF),A,Set Pattern 0xE9,N/A,ACTION_LOGGED,2025-08-26 18:05:30.587
+Voltage Test (Switches OFF),B,Set Pattern 0xE9,N/A,ACTION_LOGGED,2025-08-26 18:05:32.597
+Voltage Test (Switches OFF),A,Set Pattern 0xEA,N/A,ACTION_LOGGED,2025-08-26 18:05:32.601
+Voltage Test (Switches OFF),B,Set Pattern 0xEA,N/A,ACTION_LOGGED,2025-08-26 18:05:34.611
+Voltage Test (Switches OFF),A,Set Pattern 0xEB,N/A,ACTION_LOGGED,2025-08-26 18:05:34.627
+Voltage Test (Switches OFF),B,Set Pattern 0xEB,N/A,ACTION_LOGGED,2025-08-26 18:05:36.638
+Voltage Test (Switches OFF),A,Set Pattern 0xEC,N/A,ACTION_LOGGED,2025-08-26 18:05:36.651
+Voltage Test (Switches OFF),B,Set Pattern 0xEC,N/A,ACTION_LOGGED,2025-08-26 18:05:38.662
+Voltage Test (Switches OFF),A,Set Pattern 0xED,N/A,ACTION_LOGGED,2025-08-26 18:05:38.675
+Voltage Test (Switches OFF),B,Set Pattern 0xED,N/A,ACTION_LOGGED,2025-08-26 18:05:40.685
+Voltage Test (Switches OFF),A,Set Pattern 0xEE,N/A,ACTION_LOGGED,2025-08-26 18:05:40.699
+Voltage Test (Switches OFF),B,Set Pattern 0xEE,N/A,ACTION_LOGGED,2025-08-26 18:05:42.709
+Voltage Test (Switches OFF),A,Set Pattern 0xEF,N/A,ACTION_LOGGED,2025-08-26 18:05:42.723
+Voltage Test (Switches OFF),B,Set Pattern 0xEF,N/A,ACTION_LOGGED,2025-08-26 18:05:44.733
+Voltage Test (Switches OFF),A,Set Pattern 0xF0,N/A,ACTION_LOGGED,2025-08-26 18:05:44.738
+Voltage Test (Switches OFF),B,Set Pattern 0xF0,N/A,ACTION_LOGGED,2025-08-26 18:05:46.747
+Voltage Test (Switches OFF),A,Set Pattern 0xF1,N/A,ACTION_LOGGED,2025-08-26 18:05:46.763
+Voltage Test (Switches OFF),B,Set Pattern 0xF1,N/A,ACTION_LOGGED,2025-08-26 18:05:48.774
+Voltage Test (Switches OFF),A,Set Pattern 0xF2,N/A,ACTION_LOGGED,2025-08-26 18:05:48.787
+Voltage Test (Switches OFF),B,Set Pattern 0xF2,N/A,ACTION_LOGGED,2025-08-26 18:05:50.798
+Voltage Test (Switches OFF),A,Set Pattern 0xF3,N/A,ACTION_LOGGED,2025-08-26 18:05:50.811
+Voltage Test (Switches OFF),B,Set Pattern 0xF3,N/A,ACTION_LOGGED,2025-08-26 18:05:52.821
+Voltage Test (Switches OFF),A,Set Pattern 0xF4,N/A,ACTION_LOGGED,2025-08-26 18:05:52.825
+Voltage Test (Switches OFF),B,Set Pattern 0xF4,N/A,ACTION_LOGGED,2025-08-26 18:05:54.829
+Voltage Test (Switches OFF),A,Set Pattern 0xF5,N/A,ACTION_LOGGED,2025-08-26 18:05:54.842
+Voltage Test (Switches OFF),B,Set Pattern 0xF5,N/A,ACTION_LOGGED,2025-08-26 18:05:56.853
+Voltage Test (Switches OFF),A,Set Pattern 0xF6,N/A,ACTION_LOGGED,2025-08-26 18:05:56.866
+Voltage Test (Switches OFF),B,Set Pattern 0xF6,N/A,ACTION_LOGGED,2025-08-26 18:05:58.876
+Voltage Test (Switches OFF),A,Set Pattern 0xF7,N/A,ACTION_LOGGED,2025-08-26 18:05:58.880
+Voltage Test (Switches OFF),B,Set Pattern 0xF7,N/A,ACTION_LOGGED,2025-08-26 18:06:00.891
+Voltage Test (Switches OFF),A,Set Pattern 0xF8,N/A,ACTION_LOGGED,2025-08-26 18:06:00.898
+Voltage Test (Switches OFF),B,Set Pattern 0xF8,N/A,ACTION_LOGGED,2025-08-26 18:06:02.908
+Voltage Test (Switches OFF),A,Set Pattern 0xF9,N/A,ACTION_LOGGED,2025-08-26 18:06:02.921
+Voltage Test (Switches OFF),B,Set Pattern 0xF9,N/A,ACTION_LOGGED,2025-08-26 18:06:04.931
+Voltage Test (Switches OFF),A,Set Pattern 0xFA,N/A,ACTION_LOGGED,2025-08-26 18:06:04.935
+Voltage Test (Switches OFF),B,Set Pattern 0xFA,N/A,ACTION_LOGGED,2025-08-26 18:06:06.944
+Voltage Test (Switches OFF),A,Set Pattern 0xFB,N/A,ACTION_LOGGED,2025-08-26 18:06:06.961
+Voltage Test (Switches OFF),B,Set Pattern 0xFB,N/A,ACTION_LOGGED,2025-08-26 18:06:08.972
+Voltage Test (Switches OFF),A,Set Pattern 0xFC,N/A,ACTION_LOGGED,2025-08-26 18:06:08.976
+Voltage Test (Switches OFF),B,Set Pattern 0xFC,N/A,ACTION_LOGGED,2025-08-26 18:06:10.982
+Voltage Test (Switches OFF),A,Set Pattern 0xFD,N/A,ACTION_LOGGED,2025-08-26 18:06:10.993
+Voltage Test (Switches OFF),B,Set Pattern 0xFD,N/A,ACTION_LOGGED,2025-08-26 18:06:13.000
+Voltage Test (Switches OFF),A,Set Pattern 0xFE,N/A,ACTION_LOGGED,2025-08-26 18:06:13.016
+Voltage Test (Switches OFF),B,Set Pattern 0xFE,N/A,ACTION_LOGGED,2025-08-26 18:06:15.026
+Voltage Test (Switches OFF),A,Set Pattern 0xFF,N/A,ACTION_LOGGED,2025-08-26 18:06:15.030
+Voltage Test (Switches OFF),B,Set Pattern 0xFF,N/A,ACTION_LOGGED,2025-08-26 18:06:17.045
+Voltage Test (Switches ON),A,Set Pattern 0x00,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:08:20.263
+Voltage Test (Switches ON),B,Set Pattern 0x00,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:08:24.335
+Voltage Test (Switches ON),A,Set Pattern 0x01,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:08:26.397
+Voltage Test (Switches ON),B,Set Pattern 0x01,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:08:30.468
+Voltage Test (Switches ON),A,Set Pattern 0x02,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:08:32.537
+Voltage Test (Switches ON),B,Set Pattern 0x02,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:08:36.608
+Voltage Test (Switches ON),A,Set Pattern 0x03,Measured N/AV (Expected ~1.9V),FAIL,2025-08-26 18:08:38.675
+Voltage Test (Switches ON),B,Set Pattern 0x03,Measured N/AV (Expected ~1.9V),FAIL,2025-08-26 18:08:42.739
+Voltage Test (Switches ON),A,Set Pattern 0x04,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:08:44.798
+Voltage Test (Switches ON),B,Set Pattern 0x04,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:08:48.868
+Voltage Test (Switches ON),A,Set Pattern 0x05,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:08:50.932
+Voltage Test (Switches ON),B,Set Pattern 0x05,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:08:54.993
+Voltage Test (Switches ON),A,Set Pattern 0x06,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:08:57.058
+Voltage Test (Switches ON),B,Set Pattern 0x06,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:09:01.130
+Voltage Test (Switches ON),A,Set Pattern 0x07,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:09:03.193
+Voltage Test (Switches ON),B,Set Pattern 0x07,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:09:07.264
+Voltage Test (Switches ON),A,Set Pattern 0x08,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:09:09.338
+Voltage Test (Switches ON),B,Set Pattern 0x08,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:09:13.410
+Voltage Test (Switches ON),A,Set Pattern 0x09,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:09:15.478
+Voltage Test (Switches ON),B,Set Pattern 0x09,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:09:19.549
+Voltage Test (Switches ON),A,Set Pattern 0x0A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:09:21.612
+Voltage Test (Switches ON),B,Set Pattern 0x0A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:09:25.684
+Voltage Test (Switches ON),A,Set Pattern 0x0B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:09:27.747
+Voltage Test (Switches ON),B,Set Pattern 0x0B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:09:31.819
+Voltage Test (Switches ON),A,Set Pattern 0x0C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:09:33.891
+Voltage Test (Switches ON),B,Set Pattern 0x0C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:09:37.956
+Voltage Test (Switches ON),A,Set Pattern 0x0D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:09:40.025
+Voltage Test (Switches ON),B,Set Pattern 0x0D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:09:44.090
+Voltage Test (Switches ON),A,Set Pattern 0x0E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:09:46.164
+Voltage Test (Switches ON),B,Set Pattern 0x0E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:09:50.235
+Voltage Test (Switches ON),A,Set Pattern 0x0F,Measured N/AV (Expected ~2.0V),FAIL,2025-08-26 18:09:52.298
+Voltage Test (Switches ON),B,Set Pattern 0x0F,Measured N/AV (Expected ~2.0V),FAIL,2025-08-26 18:09:56.368
+Voltage Test (Switches ON),A,Set Pattern 0x10,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:09:58.431
+Voltage Test (Switches ON),B,Set Pattern 0x10,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:02.502
+Voltage Test (Switches ON),A,Set Pattern 0x11,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:04.574
+Voltage Test (Switches ON),B,Set Pattern 0x11,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:08.638
+Voltage Test (Switches ON),A,Set Pattern 0x12,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:10.701
+Voltage Test (Switches ON),B,Set Pattern 0x12,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:14.772
+Voltage Test (Switches ON),A,Set Pattern 0x13,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:10:16.835
+Voltage Test (Switches ON),B,Set Pattern 0x13,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:10:20.906
+Voltage Test (Switches ON),A,Set Pattern 0x14,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:22.970
+Voltage Test (Switches ON),B,Set Pattern 0x14,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:27.033
+Voltage Test (Switches ON),A,Set Pattern 0x15,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:29.098
+Voltage Test (Switches ON),B,Set Pattern 0x15,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:33.164
+Voltage Test (Switches ON),A,Set Pattern 0x16,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:35.219
+Voltage Test (Switches ON),B,Set Pattern 0x16,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:39.290
+Voltage Test (Switches ON),A,Set Pattern 0x17,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:10:41.354
+Voltage Test (Switches ON),B,Set Pattern 0x17,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:10:45.426
+Voltage Test (Switches ON),A,Set Pattern 0x18,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:47.482
+Voltage Test (Switches ON),B,Set Pattern 0x18,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:51.549
+Voltage Test (Switches ON),A,Set Pattern 0x19,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:53.620
+Voltage Test (Switches ON),B,Set Pattern 0x19,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:57.684
+Voltage Test (Switches ON),A,Set Pattern 0x1A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:10:59.763
+Voltage Test (Switches ON),B,Set Pattern 0x1A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:11:03.828
+Voltage Test (Switches ON),A,Set Pattern 0x1B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:11:05.901
+Voltage Test (Switches ON),B,Set Pattern 0x1B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:11:09.973
+Voltage Test (Switches ON),A,Set Pattern 0x1C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:11:12.031
+Voltage Test (Switches ON),B,Set Pattern 0x1C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:11:16.100
+Voltage Test (Switches ON),A,Set Pattern 0x1D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:11:18.172
+Voltage Test (Switches ON),B,Set Pattern 0x1D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:11:22.244
+Voltage Test (Switches ON),A,Set Pattern 0x1E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:11:24.307
+Voltage Test (Switches ON),B,Set Pattern 0x1E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:11:28.368
+Voltage Test (Switches ON),A,Set Pattern 0x1F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:11:30.440
+Voltage Test (Switches ON),B,Set Pattern 0x1F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:11:34.506
+Voltage Test (Switches ON),A,Set Pattern 0x20,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:11:36.568
+Voltage Test (Switches ON),B,Set Pattern 0x20,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:11:40.640
+Voltage Test (Switches ON),A,Set Pattern 0x21,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:11:42.703
+Voltage Test (Switches ON),B,Set Pattern 0x21,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:11:46.769
+Voltage Test (Switches ON),A,Set Pattern 0x22,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:11:48.838
+Voltage Test (Switches ON),B,Set Pattern 0x22,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:11:52.906
+Voltage Test (Switches ON),A,Set Pattern 0x23,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:11:54.968
+Voltage Test (Switches ON),B,Set Pattern 0x23,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:11:59.039
+Voltage Test (Switches ON),A,Set Pattern 0x24,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:01.103
+Voltage Test (Switches ON),B,Set Pattern 0x24,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:05.172
+Voltage Test (Switches ON),A,Set Pattern 0x25,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:07.246
+Voltage Test (Switches ON),B,Set Pattern 0x25,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:11.311
+Voltage Test (Switches ON),A,Set Pattern 0x26,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:13.384
+Voltage Test (Switches ON),B,Set Pattern 0x26,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:17.450
+Voltage Test (Switches ON),A,Set Pattern 0x27,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:12:19.529
+Voltage Test (Switches ON),B,Set Pattern 0x27,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:12:23.599
+Voltage Test (Switches ON),A,Set Pattern 0x28,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:25.656
+Voltage Test (Switches ON),B,Set Pattern 0x28,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:29.718
+Voltage Test (Switches ON),A,Set Pattern 0x29,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:31.776
+Voltage Test (Switches ON),B,Set Pattern 0x29,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:35.844
+Voltage Test (Switches ON),A,Set Pattern 0x2A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:37.917
+Voltage Test (Switches ON),B,Set Pattern 0x2A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:41.985
+Voltage Test (Switches ON),A,Set Pattern 0x2B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:12:44.051
+Voltage Test (Switches ON),B,Set Pattern 0x2B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:12:48.122
+Voltage Test (Switches ON),A,Set Pattern 0x2C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:50.186
+Voltage Test (Switches ON),B,Set Pattern 0x2C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:54.257
+Voltage Test (Switches ON),A,Set Pattern 0x2D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:12:56.331
+Voltage Test (Switches ON),B,Set Pattern 0x2D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:00.398
+Voltage Test (Switches ON),A,Set Pattern 0x2E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:02.459
+Voltage Test (Switches ON),B,Set Pattern 0x2E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:06.524
+Voltage Test (Switches ON),A,Set Pattern 0x2F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:13:08.600
+Voltage Test (Switches ON),B,Set Pattern 0x2F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:13:12.671
+Voltage Test (Switches ON),A,Set Pattern 0x30,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:14.744
+Voltage Test (Switches ON),B,Set Pattern 0x30,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:18.805
+Voltage Test (Switches ON),A,Set Pattern 0x31,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:20.883
+Voltage Test (Switches ON),B,Set Pattern 0x31,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:24.938
+Voltage Test (Switches ON),A,Set Pattern 0x32,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:27.020
+Voltage Test (Switches ON),B,Set Pattern 0x32,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:31.078
+Voltage Test (Switches ON),A,Set Pattern 0x33,Measured N/AV (Expected ~2.4V),FAIL,2025-08-26 18:13:33.150
+Voltage Test (Switches ON),B,Set Pattern 0x33,Measured N/AV (Expected ~2.4V),FAIL,2025-08-26 18:13:37.222
+Voltage Test (Switches ON),A,Set Pattern 0x34,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:39.295
+Voltage Test (Switches ON),B,Set Pattern 0x34,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:43.357
+Voltage Test (Switches ON),A,Set Pattern 0x35,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:45.422
+Voltage Test (Switches ON),B,Set Pattern 0x35,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:49.485
+Voltage Test (Switches ON),A,Set Pattern 0x36,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:51.567
+Voltage Test (Switches ON),B,Set Pattern 0x36,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:13:55.639
+Voltage Test (Switches ON),A,Set Pattern 0x37,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:13:57.711
+Voltage Test (Switches ON),B,Set Pattern 0x37,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:14:01.779
+Voltage Test (Switches ON),A,Set Pattern 0x38,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:03.851
+Voltage Test (Switches ON),B,Set Pattern 0x38,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:07.907
+Voltage Test (Switches ON),A,Set Pattern 0x39,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:09.977
+Voltage Test (Switches ON),B,Set Pattern 0x39,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:14.049
+Voltage Test (Switches ON),A,Set Pattern 0x3A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:16.107
+Voltage Test (Switches ON),B,Set Pattern 0x3A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:20.178
+Voltage Test (Switches ON),A,Set Pattern 0x3B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:14:22.241
+Voltage Test (Switches ON),B,Set Pattern 0x3B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:14:26.305
+Voltage Test (Switches ON),A,Set Pattern 0x3C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:28.376
+Voltage Test (Switches ON),B,Set Pattern 0x3C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:32.446
+Voltage Test (Switches ON),A,Set Pattern 0x3D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:34.511
+Voltage Test (Switches ON),B,Set Pattern 0x3D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:38.577
+Voltage Test (Switches ON),A,Set Pattern 0x3E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:40.644
+Voltage Test (Switches ON),B,Set Pattern 0x3E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:44.707
+Voltage Test (Switches ON),A,Set Pattern 0x3F,Measured N/AV (Expected ~2.6V),FAIL,2025-08-26 18:14:46.777
+Voltage Test (Switches ON),B,Set Pattern 0x3F,Measured N/AV (Expected ~2.6V),FAIL,2025-08-26 18:14:50.847
+Voltage Test (Switches ON),A,Set Pattern 0x40,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:52.911
+Voltage Test (Switches ON),B,Set Pattern 0x40,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:56.982
+Voltage Test (Switches ON),A,Set Pattern 0x41,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:14:59.046
+Voltage Test (Switches ON),B,Set Pattern 0x41,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:03.118
+Voltage Test (Switches ON),A,Set Pattern 0x42,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:05.182
+Voltage Test (Switches ON),B,Set Pattern 0x42,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:09.253
+Voltage Test (Switches ON),A,Set Pattern 0x43,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:15:11.310
+Voltage Test (Switches ON),B,Set Pattern 0x43,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:15:15.372
+Voltage Test (Switches ON),A,Set Pattern 0x44,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:17.432
+Voltage Test (Switches ON),B,Set Pattern 0x44,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:21.495
+Voltage Test (Switches ON),A,Set Pattern 0x45,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:23.558
+Voltage Test (Switches ON),B,Set Pattern 0x45,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:27.613
+Voltage Test (Switches ON),A,Set Pattern 0x46,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:29.685
+Voltage Test (Switches ON),B,Set Pattern 0x46,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:33.749
+Voltage Test (Switches ON),A,Set Pattern 0x47,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:15:35.827
+Voltage Test (Switches ON),B,Set Pattern 0x47,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:15:39.894
+Voltage Test (Switches ON),A,Set Pattern 0x48,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:41.956
+Voltage Test (Switches ON),B,Set Pattern 0x48,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:46.023
+Voltage Test (Switches ON),A,Set Pattern 0x49,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:48.097
+Voltage Test (Switches ON),B,Set Pattern 0x49,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:52.169
+Voltage Test (Switches ON),A,Set Pattern 0x4A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:54.233
+Voltage Test (Switches ON),B,Set Pattern 0x4A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:15:58.303
+Voltage Test (Switches ON),A,Set Pattern 0x4B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:16:00.367
+Voltage Test (Switches ON),B,Set Pattern 0x4B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:16:04.423
+Voltage Test (Switches ON),A,Set Pattern 0x4C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:16:06.494
+Voltage Test (Switches ON),B,Set Pattern 0x4C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:16:10.565
+Voltage Test (Switches ON),A,Set Pattern 0x4D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:16:12.626
+Voltage Test (Switches ON),B,Set Pattern 0x4D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:16:16.693
+Voltage Test (Switches ON),A,Set Pattern 0x4E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:16:18.762
+Voltage Test (Switches ON),B,Set Pattern 0x4E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:16:22.834
+Voltage Test (Switches ON),A,Set Pattern 0x4F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:16:24.907
+Voltage Test (Switches ON),B,Set Pattern 0x4F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:16:28.979
+Voltage Test (Switches ON),A,Set Pattern 0x50,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:16:31.042
+Voltage Test (Switches ON),B,Set Pattern 0x50,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:16:35.114
+Voltage Test (Switches ON),A,Set Pattern 0x51,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:16:37.176
+Voltage Test (Switches ON),B,Set Pattern 0x51,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:16:41.233
+Voltage Test (Switches ON),A,Set Pattern 0x52,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:16:43.314
+Voltage Test (Switches ON),B,Set Pattern 0x52,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:16:47.383
+Voltage Test (Switches ON),A,Set Pattern 0x53,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:16:49.444
+Voltage Test (Switches ON),B,Set Pattern 0x53,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:16:53.515
+Voltage Test (Switches ON),A,Set Pattern 0x54,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:16:55.577
+Voltage Test (Switches ON),B,Set Pattern 0x54,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:16:59.648
+Voltage Test (Switches ON),A,Set Pattern 0x55,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:01.705
+Voltage Test (Switches ON),B,Set Pattern 0x55,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:05.776
+Voltage Test (Switches ON),A,Set Pattern 0x56,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:07.839
+Voltage Test (Switches ON),B,Set Pattern 0x56,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:11.906
+Voltage Test (Switches ON),A,Set Pattern 0x57,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:17:13.970
+Voltage Test (Switches ON),B,Set Pattern 0x57,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:17:18.037
+Voltage Test (Switches ON),A,Set Pattern 0x58,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:20.101
+Voltage Test (Switches ON),B,Set Pattern 0x58,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:24.169
+Voltage Test (Switches ON),A,Set Pattern 0x59,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:26.237
+Voltage Test (Switches ON),B,Set Pattern 0x59,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:30.309
+Voltage Test (Switches ON),A,Set Pattern 0x5A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:32.364
+Voltage Test (Switches ON),B,Set Pattern 0x5A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:36.417
+Voltage Test (Switches ON),A,Set Pattern 0x5B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:17:38.481
+Voltage Test (Switches ON),B,Set Pattern 0x5B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:17:42.551
+Voltage Test (Switches ON),A,Set Pattern 0x5C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:44.619
+Voltage Test (Switches ON),B,Set Pattern 0x5C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:48.689
+Voltage Test (Switches ON),A,Set Pattern 0x5D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:50.754
+Voltage Test (Switches ON),B,Set Pattern 0x5D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:54.820
+Voltage Test (Switches ON),A,Set Pattern 0x5E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:17:56.892
+Voltage Test (Switches ON),B,Set Pattern 0x5E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:18:00.955
+Voltage Test (Switches ON),A,Set Pattern 0x5F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:18:03.018
+Voltage Test (Switches ON),B,Set Pattern 0x5F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:18:07.089
+Voltage Test (Switches ON),A,Set Pattern 0x60,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:18:09.163
+Voltage Test (Switches ON),B,Set Pattern 0x60,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:18:13.229
+Voltage Test (Switches ON),A,Set Pattern 0x61,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:18:15.293
+Voltage Test (Switches ON),B,Set Pattern 0x61,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:18:19.365
+Voltage Test (Switches ON),A,Set Pattern 0x62,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:18:21.425
+Voltage Test (Switches ON),B,Set Pattern 0x62,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:18:25.497
+Voltage Test (Switches ON),A,Set Pattern 0x63,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:18:27.560
+Voltage Test (Switches ON),B,Set Pattern 0x63,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:18:31.632
+Voltage Test (Switches ON),A,Set Pattern 0x64,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:18:33.696
+Voltage Test (Switches ON),B,Set Pattern 0x64,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:18:37.768
+Voltage Test (Switches ON),A,Set Pattern 0x65,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:18:39.841
+Voltage Test (Switches ON),B,Set Pattern 0x65,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:18:43.913
+Voltage Test (Switches ON),A,Set Pattern 0x66,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:18:45.976
+Voltage Test (Switches ON),B,Set Pattern 0x66,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:18:50.040
+Voltage Test (Switches ON),A,Set Pattern 0x67,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:18:52.121
+Voltage Test (Switches ON),B,Set Pattern 0x67,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:18:56.192
+Voltage Test (Switches ON),A,Set Pattern 0x68,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:18:58.264
+Voltage Test (Switches ON),B,Set Pattern 0x68,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:02.328
+Voltage Test (Switches ON),A,Set Pattern 0x69,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:04.391
+Voltage Test (Switches ON),B,Set Pattern 0x69,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:08.462
+Voltage Test (Switches ON),A,Set Pattern 0x6A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:10.525
+Voltage Test (Switches ON),B,Set Pattern 0x6A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:14.596
+Voltage Test (Switches ON),A,Set Pattern 0x6B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:19:16.661
+Voltage Test (Switches ON),B,Set Pattern 0x6B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:19:20.732
+Voltage Test (Switches ON),A,Set Pattern 0x6C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:22.795
+Voltage Test (Switches ON),B,Set Pattern 0x6C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:26.865
+Voltage Test (Switches ON),A,Set Pattern 0x6D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:28.925
+Voltage Test (Switches ON),B,Set Pattern 0x6D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:32.996
+Voltage Test (Switches ON),A,Set Pattern 0x6E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:35.060
+Voltage Test (Switches ON),B,Set Pattern 0x6E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:39.131
+Voltage Test (Switches ON),A,Set Pattern 0x6F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:19:41.204
+Voltage Test (Switches ON),B,Set Pattern 0x6F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:19:45.269
+Voltage Test (Switches ON),A,Set Pattern 0x70,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:47.339
+Voltage Test (Switches ON),B,Set Pattern 0x70,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:51.411
+Voltage Test (Switches ON),A,Set Pattern 0x71,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:53.475
+Voltage Test (Switches ON),B,Set Pattern 0x71,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:57.545
+Voltage Test (Switches ON),A,Set Pattern 0x72,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:19:59.618
+Voltage Test (Switches ON),B,Set Pattern 0x72,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:20:03.690
+Voltage Test (Switches ON),A,Set Pattern 0x73,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:20:05.761
+Voltage Test (Switches ON),B,Set Pattern 0x73,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:20:09.829
+Voltage Test (Switches ON),A,Set Pattern 0x74,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:20:11.902
+Voltage Test (Switches ON),B,Set Pattern 0x74,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:20:15.961
+Voltage Test (Switches ON),A,Set Pattern 0x75,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:20:18.030
+Voltage Test (Switches ON),B,Set Pattern 0x75,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:20:22.094
+Voltage Test (Switches ON),A,Set Pattern 0x76,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:20:24.166
+Voltage Test (Switches ON),B,Set Pattern 0x76,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:20:28.230
+Voltage Test (Switches ON),A,Set Pattern 0x77,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:20:30.302
+Voltage Test (Switches ON),B,Set Pattern 0x77,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:20:34.371
+Voltage Test (Switches ON),A,Set Pattern 0x78,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:20:36.438
+Voltage Test (Switches ON),B,Set Pattern 0x78,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:20:40.509
+Voltage Test (Switches ON),A,Set Pattern 0x79,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:20:42.573
+Voltage Test (Switches ON),B,Set Pattern 0x79,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:20:46.644
+Voltage Test (Switches ON),A,Set Pattern 0x7A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:20:48.718
+Voltage Test (Switches ON),B,Set Pattern 0x7A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:20:52.790
+Voltage Test (Switches ON),A,Set Pattern 0x7B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:20:54.863
+Voltage Test (Switches ON),B,Set Pattern 0x7B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:20:58.934
+Voltage Test (Switches ON),A,Set Pattern 0x7C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:00.997
+Voltage Test (Switches ON),B,Set Pattern 0x7C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:05.061
+Voltage Test (Switches ON),A,Set Pattern 0x7D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:07.124
+Voltage Test (Switches ON),B,Set Pattern 0x7D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:11.188
+Voltage Test (Switches ON),A,Set Pattern 0x7E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:13.260
+Voltage Test (Switches ON),B,Set Pattern 0x7E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:17.331
+Voltage Test (Switches ON),A,Set Pattern 0x7F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:21:19.403
+Voltage Test (Switches ON),B,Set Pattern 0x7F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:21:23.474
+Voltage Test (Switches ON),A,Set Pattern 0x80,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:25.539
+Voltage Test (Switches ON),B,Set Pattern 0x80,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:29.610
+Voltage Test (Switches ON),A,Set Pattern 0x81,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:31.670
+Voltage Test (Switches ON),B,Set Pattern 0x81,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:35.742
+Voltage Test (Switches ON),A,Set Pattern 0x82,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:37.804
+Voltage Test (Switches ON),B,Set Pattern 0x82,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:41.869
+Voltage Test (Switches ON),A,Set Pattern 0x83,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:21:43.933
+Voltage Test (Switches ON),B,Set Pattern 0x83,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:21:48.005
+Voltage Test (Switches ON),A,Set Pattern 0x84,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:50.074
+Voltage Test (Switches ON),B,Set Pattern 0x84,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:54.146
+Voltage Test (Switches ON),A,Set Pattern 0x85,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:21:56.209
+Voltage Test (Switches ON),B,Set Pattern 0x85,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:00.281
+Voltage Test (Switches ON),A,Set Pattern 0x86,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:02.354
+Voltage Test (Switches ON),B,Set Pattern 0x86,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:06.410
+Voltage Test (Switches ON),A,Set Pattern 0x87,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:22:08.483
+Voltage Test (Switches ON),B,Set Pattern 0x87,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:22:12.554
+Voltage Test (Switches ON),A,Set Pattern 0x88,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:14.617
+Voltage Test (Switches ON),B,Set Pattern 0x88,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:18.680
+Voltage Test (Switches ON),A,Set Pattern 0x89,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:20.753
+Voltage Test (Switches ON),B,Set Pattern 0x89,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:24.824
+Voltage Test (Switches ON),A,Set Pattern 0x8A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:26.890
+Voltage Test (Switches ON),B,Set Pattern 0x8A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:30.957
+Voltage Test (Switches ON),A,Set Pattern 0x8B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:22:33.035
+Voltage Test (Switches ON),B,Set Pattern 0x8B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:22:37.106
+Voltage Test (Switches ON),A,Set Pattern 0x8C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:39.170
+Voltage Test (Switches ON),B,Set Pattern 0x8C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:43.230
+Voltage Test (Switches ON),A,Set Pattern 0x8D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:45.288
+Voltage Test (Switches ON),B,Set Pattern 0x8D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:49.354
+Voltage Test (Switches ON),A,Set Pattern 0x8E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:51.432
+Voltage Test (Switches ON),B,Set Pattern 0x8E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:22:55.497
+Voltage Test (Switches ON),A,Set Pattern 0x8F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:22:57.561
+Voltage Test (Switches ON),B,Set Pattern 0x8F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:23:01.632
+Voltage Test (Switches ON),A,Set Pattern 0x90,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:03.696
+Voltage Test (Switches ON),B,Set Pattern 0x90,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:07.760
+Voltage Test (Switches ON),A,Set Pattern 0x91,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:09.831
+Voltage Test (Switches ON),B,Set Pattern 0x91,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:13.902
+Voltage Test (Switches ON),A,Set Pattern 0x92,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:15.966
+Voltage Test (Switches ON),B,Set Pattern 0x92,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:20.037
+Voltage Test (Switches ON),A,Set Pattern 0x93,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:23:22.109
+Voltage Test (Switches ON),B,Set Pattern 0x93,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:23:26.181
+Voltage Test (Switches ON),A,Set Pattern 0x94,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:28.244
+Voltage Test (Switches ON),B,Set Pattern 0x94,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:32.314
+Voltage Test (Switches ON),A,Set Pattern 0x95,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:34.379
+Voltage Test (Switches ON),B,Set Pattern 0x95,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:38.441
+Voltage Test (Switches ON),A,Set Pattern 0x96,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:40.507
+Voltage Test (Switches ON),B,Set Pattern 0x96,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:44.578
+Voltage Test (Switches ON),A,Set Pattern 0x97,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:23:46.640
+Voltage Test (Switches ON),B,Set Pattern 0x97,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:23:50.711
+Voltage Test (Switches ON),A,Set Pattern 0x98,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:52.781
+Voltage Test (Switches ON),B,Set Pattern 0x98,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:56.853
+Voltage Test (Switches ON),A,Set Pattern 0x99,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:23:58.911
+Voltage Test (Switches ON),B,Set Pattern 0x99,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:02.983
+Voltage Test (Switches ON),A,Set Pattern 0x9A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:05.056
+Voltage Test (Switches ON),B,Set Pattern 0x9A,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:09.127
+Voltage Test (Switches ON),A,Set Pattern 0x9B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:24:11.190
+Voltage Test (Switches ON),B,Set Pattern 0x9B,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:24:15.262
+Voltage Test (Switches ON),A,Set Pattern 0x9C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:17.320
+Voltage Test (Switches ON),B,Set Pattern 0x9C,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:21.392
+Voltage Test (Switches ON),A,Set Pattern 0x9D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:23.448
+Voltage Test (Switches ON),B,Set Pattern 0x9D,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:27.518
+Voltage Test (Switches ON),A,Set Pattern 0x9E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:29.581
+Voltage Test (Switches ON),B,Set Pattern 0x9E,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:33.652
+Voltage Test (Switches ON),A,Set Pattern 0x9F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:24:35.710
+Voltage Test (Switches ON),B,Set Pattern 0x9F,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:24:39.781
+Voltage Test (Switches ON),A,Set Pattern 0xA0,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:41.845
+Voltage Test (Switches ON),B,Set Pattern 0xA0,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:45.917
+Voltage Test (Switches ON),A,Set Pattern 0xA1,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:47.980
+Voltage Test (Switches ON),B,Set Pattern 0xA1,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:52.051
+Voltage Test (Switches ON),A,Set Pattern 0xA2,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:54.124
+Voltage Test (Switches ON),B,Set Pattern 0xA2,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:24:58.194
+Voltage Test (Switches ON),A,Set Pattern 0xA3,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:25:00.268
+Voltage Test (Switches ON),B,Set Pattern 0xA3,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:25:04.340
+Voltage Test (Switches ON),A,Set Pattern 0xA4,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:25:06.403
+Voltage Test (Switches ON),B,Set Pattern 0xA4,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:25:10.469
+Voltage Test (Switches ON),A,Set Pattern 0xA5,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:25:12.532
+Voltage Test (Switches ON),B,Set Pattern 0xA5,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:25:16.604
+Voltage Test (Switches ON),A,Set Pattern 0xA6,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:25:18.667
+Voltage Test (Switches ON),B,Set Pattern 0xA6,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:25:22.733
+Voltage Test (Switches ON),A,Set Pattern 0xA7,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:25:24.802
+Voltage Test (Switches ON),B,Set Pattern 0xA7,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:25:28.874
+Voltage Test (Switches ON),A,Set Pattern 0xA8,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:25:30.928
+Voltage Test (Switches ON),B,Set Pattern 0xA8,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:25:34.992
+Voltage Test (Switches ON),A,Set Pattern 0xA9,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:25:37.065
+Voltage Test (Switches ON),B,Set Pattern 0xA9,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:25:41.136
+Voltage Test (Switches ON),A,Set Pattern 0xAA,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:25:43.199
+Voltage Test (Switches ON),B,Set Pattern 0xAA,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:25:47.269
+Voltage Test (Switches ON),A,Set Pattern 0xAB,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:25:49.335
+Voltage Test (Switches ON),B,Set Pattern 0xAB,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:25:53.389
+Voltage Test (Switches ON),A,Set Pattern 0xAC,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:25:55.454
+Voltage Test (Switches ON),B,Set Pattern 0xAC,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:25:59.517
+Voltage Test (Switches ON),A,Set Pattern 0xAD,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:01.581
+Voltage Test (Switches ON),B,Set Pattern 0xAD,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:05.647
+Voltage Test (Switches ON),A,Set Pattern 0xAE,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:07.725
+Voltage Test (Switches ON),B,Set Pattern 0xAE,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:11.797
+Voltage Test (Switches ON),A,Set Pattern 0xAF,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:26:13.860
+Voltage Test (Switches ON),B,Set Pattern 0xAF,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:26:17.929
+Voltage Test (Switches ON),A,Set Pattern 0xB0,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:20.003
+Voltage Test (Switches ON),B,Set Pattern 0xB0,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:24.075
+Voltage Test (Switches ON),A,Set Pattern 0xB1,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:26.137
+Voltage Test (Switches ON),B,Set Pattern 0xB1,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:30.209
+Voltage Test (Switches ON),A,Set Pattern 0xB2,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:32.264
+Voltage Test (Switches ON),B,Set Pattern 0xB2,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:36.336
+Voltage Test (Switches ON),A,Set Pattern 0xB3,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:26:38.408
+Voltage Test (Switches ON),B,Set Pattern 0xB3,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:26:42.479
+Voltage Test (Switches ON),A,Set Pattern 0xB4,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:44.541
+Voltage Test (Switches ON),B,Set Pattern 0xB4,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:48.613
+Voltage Test (Switches ON),A,Set Pattern 0xB5,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:50.686
+Voltage Test (Switches ON),B,Set Pattern 0xB5,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:54.757
+Voltage Test (Switches ON),A,Set Pattern 0xB6,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:26:56.819
+Voltage Test (Switches ON),B,Set Pattern 0xB6,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:27:00.890
+Voltage Test (Switches ON),A,Set Pattern 0xB7,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:27:02.946
+Voltage Test (Switches ON),B,Set Pattern 0xB7,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:27:07.009
+Voltage Test (Switches ON),A,Set Pattern 0xB8,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:27:09.074
+Voltage Test (Switches ON),B,Set Pattern 0xB8,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:27:13.142
+Voltage Test (Switches ON),A,Set Pattern 0xB9,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:27:15.205
+Voltage Test (Switches ON),B,Set Pattern 0xB9,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:27:19.276
+Voltage Test (Switches ON),A,Set Pattern 0xBA,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:27:21.340
+Voltage Test (Switches ON),B,Set Pattern 0xBA,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:27:25.411
+Voltage Test (Switches ON),A,Set Pattern 0xBB,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:27:27.469
+Voltage Test (Switches ON),B,Set Pattern 0xBB,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:27:31.533
+Voltage Test (Switches ON),A,Set Pattern 0xBC,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:27:33.603
+Voltage Test (Switches ON),B,Set Pattern 0xBC,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:27:37.673
+Voltage Test (Switches ON),A,Set Pattern 0xBD,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:27:39.740
+Voltage Test (Switches ON),B,Set Pattern 0xBD,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:27:43.812
+Voltage Test (Switches ON),A,Set Pattern 0xBE,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:27:45.867
+Voltage Test (Switches ON),B,Set Pattern 0xBE,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:27:49.930
+Voltage Test (Switches ON),A,Set Pattern 0xBF,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:27:51.992
+Voltage Test (Switches ON),B,Set Pattern 0xBF,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:27:56.064
+Voltage Test (Switches ON),A,Set Pattern 0xC0,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:27:58.127
+Voltage Test (Switches ON),B,Set Pattern 0xC0,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:02.198
+Voltage Test (Switches ON),A,Set Pattern 0xC1,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:04.260
+Voltage Test (Switches ON),B,Set Pattern 0xC1,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:08.324
+Voltage Test (Switches ON),A,Set Pattern 0xC2,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:10.389
+Voltage Test (Switches ON),B,Set Pattern 0xC2,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:14.461
+Voltage Test (Switches ON),A,Set Pattern 0xC3,Measured N/AV (Expected ~2.8V),FAIL,2025-08-26 18:28:16.533
+Voltage Test (Switches ON),B,Set Pattern 0xC3,Measured N/AV (Expected ~2.8V),FAIL,2025-08-26 18:28:20.595
+Voltage Test (Switches ON),A,Set Pattern 0xC4,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:22.666
+Voltage Test (Switches ON),B,Set Pattern 0xC4,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:26.736
+Voltage Test (Switches ON),A,Set Pattern 0xC5,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:28.792
+Voltage Test (Switches ON),B,Set Pattern 0xC5,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:32.863
+Voltage Test (Switches ON),A,Set Pattern 0xC6,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:34.925
+Voltage Test (Switches ON),B,Set Pattern 0xC6,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:38.993
+Voltage Test (Switches ON),A,Set Pattern 0xC7,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:28:41.060
+Voltage Test (Switches ON),B,Set Pattern 0xC7,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:28:45.132
+Voltage Test (Switches ON),A,Set Pattern 0xC8,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:47.205
+Voltage Test (Switches ON),B,Set Pattern 0xC8,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:51.276
+Voltage Test (Switches ON),A,Set Pattern 0xC9,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:53.338
+Voltage Test (Switches ON),B,Set Pattern 0xC9,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:57.409
+Voltage Test (Switches ON),A,Set Pattern 0xCA,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:28:59.481
+Voltage Test (Switches ON),B,Set Pattern 0xCA,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:29:03.552
+Voltage Test (Switches ON),A,Set Pattern 0xCB,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:29:05.615
+Voltage Test (Switches ON),B,Set Pattern 0xCB,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:29:09.679
+Voltage Test (Switches ON),A,Set Pattern 0xCC,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:29:11.750
+Voltage Test (Switches ON),B,Set Pattern 0xCC,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:29:15.821
+Voltage Test (Switches ON),A,Set Pattern 0xCD,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:29:17.884
+Voltage Test (Switches ON),B,Set Pattern 0xCD,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:29:21.955
+Voltage Test (Switches ON),A,Set Pattern 0xCE,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:29:24.009
+Voltage Test (Switches ON),B,Set Pattern 0xCE,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:29:28.080
+Voltage Test (Switches ON),A,Set Pattern 0xCF,Measured N/AV (Expected ~3.5V),FAIL,2025-08-26 18:29:30.143
+Voltage Test (Switches ON),B,Set Pattern 0xCF,Measured N/AV (Expected ~3.5V),FAIL,2025-08-26 18:29:34.213
+Voltage Test (Switches ON),A,Set Pattern 0xD0,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:29:36.286
+Voltage Test (Switches ON),B,Set Pattern 0xD0,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:29:40.349
+Voltage Test (Switches ON),A,Set Pattern 0xD1,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:29:42.421
+Voltage Test (Switches ON),B,Set Pattern 0xD1,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:29:46.493
+Voltage Test (Switches ON),A,Set Pattern 0xD2,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:29:48.566
+Voltage Test (Switches ON),B,Set Pattern 0xD2,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:29:52.637
+Voltage Test (Switches ON),A,Set Pattern 0xD3,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:29:54.701
+Voltage Test (Switches ON),B,Set Pattern 0xD3,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:29:58.765
+Voltage Test (Switches ON),A,Set Pattern 0xD4,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:00.828
+Voltage Test (Switches ON),B,Set Pattern 0xD4,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:04.890
+Voltage Test (Switches ON),A,Set Pattern 0xD5,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:06.948
+Voltage Test (Switches ON),B,Set Pattern 0xD5,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:11.015
+Voltage Test (Switches ON),A,Set Pattern 0xD6,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:13.071
+Voltage Test (Switches ON),B,Set Pattern 0xD6,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:17.142
+Voltage Test (Switches ON),A,Set Pattern 0xD7,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:30:19.215
+Voltage Test (Switches ON),B,Set Pattern 0xD7,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:30:23.287
+Voltage Test (Switches ON),A,Set Pattern 0xD8,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:25.340
+Voltage Test (Switches ON),B,Set Pattern 0xD8,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:29.403
+Voltage Test (Switches ON),A,Set Pattern 0xD9,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:31.475
+Voltage Test (Switches ON),B,Set Pattern 0xD9,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:35.546
+Voltage Test (Switches ON),A,Set Pattern 0xDA,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:37.608
+Voltage Test (Switches ON),B,Set Pattern 0xDA,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:41.674
+Voltage Test (Switches ON),A,Set Pattern 0xDB,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:30:43.745
+Voltage Test (Switches ON),B,Set Pattern 0xDB,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:30:47.815
+Voltage Test (Switches ON),A,Set Pattern 0xDC,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:49.878
+Voltage Test (Switches ON),B,Set Pattern 0xDC,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:53.948
+Voltage Test (Switches ON),A,Set Pattern 0xDD,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:30:56.014
+Voltage Test (Switches ON),B,Set Pattern 0xDD,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:00.075
+Voltage Test (Switches ON),A,Set Pattern 0xDE,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:02.138
+Voltage Test (Switches ON),B,Set Pattern 0xDE,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:06.209
+Voltage Test (Switches ON),A,Set Pattern 0xDF,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:31:08.272
+Voltage Test (Switches ON),B,Set Pattern 0xDF,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:31:12.343
+Voltage Test (Switches ON),A,Set Pattern 0xE0,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:14.406
+Voltage Test (Switches ON),B,Set Pattern 0xE0,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:18.477
+Voltage Test (Switches ON),A,Set Pattern 0xE1,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:20.539
+Voltage Test (Switches ON),B,Set Pattern 0xE1,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:24.605
+Voltage Test (Switches ON),A,Set Pattern 0xE2,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:26.679
+Voltage Test (Switches ON),B,Set Pattern 0xE2,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:30.751
+Voltage Test (Switches ON),A,Set Pattern 0xE3,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:31:32.813
+Voltage Test (Switches ON),B,Set Pattern 0xE3,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:31:36.885
+Voltage Test (Switches ON),A,Set Pattern 0xE4,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:38.958
+Voltage Test (Switches ON),B,Set Pattern 0xE4,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:43.022
+Voltage Test (Switches ON),A,Set Pattern 0xE5,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:45.077
+Voltage Test (Switches ON),B,Set Pattern 0xE5,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:49.145
+Voltage Test (Switches ON),A,Set Pattern 0xE6,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:51.207
+Voltage Test (Switches ON),B,Set Pattern 0xE6,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:31:55.277
+Voltage Test (Switches ON),A,Set Pattern 0xE7,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:31:57.341
+Voltage Test (Switches ON),B,Set Pattern 0xE7,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:32:01.403
+Voltage Test (Switches ON),A,Set Pattern 0xE8,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:03.472
+Voltage Test (Switches ON),B,Set Pattern 0xE8,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:07.544
+Voltage Test (Switches ON),A,Set Pattern 0xE9,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:09.608
+Voltage Test (Switches ON),B,Set Pattern 0xE9,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:13.679
+Voltage Test (Switches ON),A,Set Pattern 0xEA,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:15.743
+Voltage Test (Switches ON),B,Set Pattern 0xEA,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:19.813
+Voltage Test (Switches ON),A,Set Pattern 0xEB,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:32:21.878
+Voltage Test (Switches ON),B,Set Pattern 0xEB,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:32:25.937
+Voltage Test (Switches ON),A,Set Pattern 0xEC,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:28.001
+Voltage Test (Switches ON),B,Set Pattern 0xEC,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:28.834
+Voltage Test (Switches ON),A,Set Pattern 0xED,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:28.884
+Voltage Test (Switches ON),B,Set Pattern 0xED,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:28.934
+Voltage Test (Switches ON),A,Set Pattern 0xEE,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:28.985
+Voltage Test (Switches ON),B,Set Pattern 0xEE,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:29.035
+Voltage Test (Switches ON),A,Set Pattern 0xEF,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:32:29.086
+Voltage Test (Switches ON),B,Set Pattern 0xEF,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:32:29.136
+Voltage Test (Switches ON),A,Set Pattern 0xF0,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:29.187
+Voltage Test (Switches ON),B,Set Pattern 0xF0,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:29.238
+Voltage Test (Switches ON),A,Set Pattern 0xF1,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:29.288
+Voltage Test (Switches ON),B,Set Pattern 0xF1,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:29.339
+Voltage Test (Switches ON),A,Set Pattern 0xF2,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:29.389
+Voltage Test (Switches ON),B,Set Pattern 0xF2,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:29.440
+Voltage Test (Switches ON),A,Set Pattern 0xF3,Measured N/AV (Expected ~4.2V),FAIL,2025-08-26 18:32:29.491
+Voltage Test (Switches ON),B,Set Pattern 0xF3,Measured N/AV (Expected ~4.2V),FAIL,2025-08-26 18:32:29.541
+Voltage Test (Switches ON),A,Set Pattern 0xF4,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:29.592
+Voltage Test (Switches ON),B,Set Pattern 0xF4,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:29.643
+Voltage Test (Switches ON),A,Set Pattern 0xF5,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:29.694
+Voltage Test (Switches ON),B,Set Pattern 0xF5,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:29.744
+Voltage Test (Switches ON),A,Set Pattern 0xF6,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:29.795
+Voltage Test (Switches ON),B,Set Pattern 0xF6,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:29.845
+Voltage Test (Switches ON),A,Set Pattern 0xF7,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:32:29.896
+Voltage Test (Switches ON),B,Set Pattern 0xF7,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:32:29.946
+Voltage Test (Switches ON),A,Set Pattern 0xF8,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:29.997
+Voltage Test (Switches ON),B,Set Pattern 0xF8,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:30.047
+Voltage Test (Switches ON),A,Set Pattern 0xF9,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:30.098
+Voltage Test (Switches ON),B,Set Pattern 0xF9,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:30.148
+Voltage Test (Switches ON),A,Set Pattern 0xFA,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:30.199
+Voltage Test (Switches ON),B,Set Pattern 0xFA,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:30.249
+Voltage Test (Switches ON),A,Set Pattern 0xFB,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:32:30.300
+Voltage Test (Switches ON),B,Set Pattern 0xFB,Measured N/AV (Expected ~NoneV),UNDEFINED_PATTERN,2025-08-26 18:32:30.351
+Voltage Test (Switches ON),A,Set Pattern 0xFC,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:30.401
+Voltage Test (Switches ON),B,Set Pattern 0xFC,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:30.452
+Voltage Test (Switches ON),A,Set Pattern 0xFD,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:30.503
+Voltage Test (Switches ON),B,Set Pattern 0xFD,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:30.553
+Voltage Test (Switches ON),A,Set Pattern 0xFE,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:30.604
+Voltage Test (Switches ON),B,Set Pattern 0xFE,Measured N/AV (Expected ~0.0V),FAIL,2025-08-26 18:32:30.655
+Voltage Test (Switches ON),A,Set Pattern 0xFF,Measured N/AV (Expected ~4.6V),FAIL,2025-08-26 18:32:30.705
+Voltage Test (Switches ON),B,Set Pattern 0xFF,Measured N/AV (Expected ~4.6V),FAIL,2025-08-26 18:32:30.756
