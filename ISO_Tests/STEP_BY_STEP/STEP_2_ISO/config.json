@@ -1,0 +1,16 @@
+{
+    "settings": {
+        "powersupply_input_voltage": 9.0,
+        "tolerance_percent": 10.0,
+        "baud_rate": 115200,
+        "initial_voltage_duration": 10
+    },
+    "nominal_values": {
+        "cic_voltage": 3.3,
+        "cic_current_ma": 11.0,
+        "vcan_current_ma": 55.0,
+        "cic_current_min_ma": 0.0,
+        "vcan_current_min_ma": 0.0
+    }
+}
+
