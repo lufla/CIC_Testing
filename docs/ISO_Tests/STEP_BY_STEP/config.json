@@ -1,0 +1,51 @@
+{
+    "settings": {
+        "baud_rate": 115200,
+        "initial_voltage_duration": 1,
+        "voltage_test_tolerance_v": 0.120,
+        "zero_threshold_v": 0.120,
+        "high_voltage_tolerance_v": 0.150,
+        "i2c_voltage_tolerance_v": 0.120,
+        "i2c_high_voltage_tolerance_v": 0.400
+    },
+    "can_test_settings": {
+        "vcan_target_voltage": 1.9,
+        "voltage_settle_time_s": 1.0,
+        "short_run_messages": 10,
+        "long_run_messages": 1000
+    },
+    "current_test_settings": {
+        "target_current_a": 0.000,
+        "current_min_a": 0.000,
+        "current_max_a": 0.050,
+        "current_settle_time_s": 0.5,
+        "voltage_tolerance_v": 0.150,
+        "R_REF_ohms": 20.0,
+        "V_REF_DAC_volts": 1.024,
+        "voltage_codes_for_current_test": [
+            3,
+            15,
+            51,
+            63,
+            195,
+            207,
+            243,
+            255
+        ]
+    },
+    "burnout_test_settings": {
+        "duration_minutes": 1,
+        "max_vcan_setting": 255,
+        "max_i2c_dac_value": 4095
+    },
+    "initial_check_ranges": {
+        "vcan_v_min": 8.1,
+        "vcan_v_max": 9.9,
+        "cic_v_min": 2.97,
+        "cic_v_max": 3.63,
+        "cic_i_min": 0.0,
+        "cic_i_max": 0.0121,
+        "vcan_i_min": 0.0,
+        "vcan_i_max": 0.0605
+    }
+}
