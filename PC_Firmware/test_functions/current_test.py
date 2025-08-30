@@ -65,7 +65,7 @@ def measure_all_currents(ser):
     return i_a, i_b
 
 
-def run(ser, config):
+def run(ser, config, session_details, logger=None):
     """Main function to execute the current channel test, assuming pre-checks have passed."""
     print("\n" + "=" * 40)
     print("         Running Test: Current Channels")
@@ -81,8 +81,10 @@ def run(ser, config):
 
     passed_count = 0
     failed_count = 0
+    logged_data = []
 
     for code in voltage_codes:
+        test_pass = True
         print(f"\n--- Testing with voltage code {code:#04x} ---")
         expected_v = voltage_test.get_expected_voltage(code, switches_on=True)
 
@@ -109,6 +111,17 @@ def run(ser, config):
             print(f"-> FAIL: Voltage not in range before current test. Exp: {expected_v:.3f}V")
             print(f"    A[SPI:{v_spi_a:.3f} I2C:{v_i2c_a:.3f}] | B[SPI:{v_spi_b:.3f} I2C:{v_i2c_b:.3f}]")
             failed_count += 1
+            test_pass = False
+
+            log_entry = {
+                'voltage_code': code,
+                'expected_v': expected_v,
+                'voltage_check_pass': False,
+                'v_spi_a': v_spi_a, 'v_spi_b': v_spi_b, 'v_i2c_a': v_i2c_a, 'v_i2c_b': v_i2c_b,
+                'current_check_pass': False
+            }
+            logged_data.append(log_entry)
+
             continue
 
         print("   Voltage OK.")
@@ -116,7 +129,19 @@ def run(ser, config):
         if not set_current(ser, target_current_a, config):
             print("-> FAIL: Did not receive ACK for set current command.")
             failed_count += 1
+            test_pass = False
+
+            log_entry = {
+                'voltage_code': code,
+                'expected_v': expected_v,
+                'voltage_check_pass': True,
+                'v_spi_a': v_spi_a, 'v_spi_b': v_spi_b, 'v_i2c_a': v_i2c_a, 'v_i2c_b': v_i2c_b,
+                'current_set_ack': False
+            }
+            logged_data.append(log_entry)
+
             continue
+
         print("   Current set command sent.")
         time.sleep(settle_time_s)
         print("4. Measuring currents...")
@@ -130,12 +155,26 @@ def run(ser, config):
             fstr_a, fstr_b = ('(FAIL)' if fail_a else ''), ('(FAIL)' if fail_b else '')
             print(f"-> FAIL: Currents out of range. Exp: {current_min_a * 1000:.1f}-{current_max_a * 1000:.1f}mA")
             print(f"    A: {meas_i_a * 1000:.1f}mA {fstr_a} | B: {meas_i_b * 1000:.1f}mA {fstr_b}")
+            test_pass = False
         else:
             passed_count += 1
             print(f"   Currents OK. (A: {meas_i_a * 1000:.1f}mA, B: {meas_i_b * 1000:.1f}mA)")
 
+        # Log the current test result for this cycle
+        log_entry = {
+            'voltage_code': code,
+            'expected_v': expected_v,
+            'voltage_check_pass': True,
+            'v_spi_a': v_spi_a, 'v_spi_b': v_spi_b, 'v_i2c_a': v_i2c_a, 'v_i2c_b': v_i2c_b,
+            'current_set_ack': True,
+            'meas_i_a': meas_i_a, 'meas_i_b': meas_i_b,
+            'current_min_a': current_min_a, 'current_max_a': current_max_a,
+            'result': 'PASS' if test_pass else 'FAIL'
+        }
+        logged_data.append(log_entry)
+
     set_current(ser, 0, config)
     print("\n--- Current Test Summary ---")
     print(f"Passed={passed_count}, Failed={failed_count}")
-    return failed_count == 0
 
+    return failed_count == 0, logged_data

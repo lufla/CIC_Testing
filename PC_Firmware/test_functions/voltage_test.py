@@ -12,11 +12,9 @@ SWITCHES_OFF_1_25V_CODES = {
 }
 
 # DIL switches are in the ON position.
-VCAN_1_9V_CODES = {
-    0x03, 0x07, 0x0b, 0x13, 0x17, 0x1b, 0x23, 0x27, 0x2b, 0x43, 0x47, 0x4b,
-    0x53, 0x57, 0x5b, 0x63, 0x67, 0x6b, 0x83, 0x87, 0x8b, 0x93, 0x97, 0x9b,
-    0xa3, 0xa7, 0xab
-}
+VCAN_1_9V_CODES = {0x03, 0x07, 0x0b, 0x13, 0x17, 0x1b, 0x23, 0x27, 0x2b, 0x43, 0x47, 0x4b,
+                   0x53, 0x57, 0x5b, 0x63, 0x67, 0x6b, 0x83, 0x87, 0x8b, 0x93, 0x97, 0x9b,
+                   0xa3, 0xa7, 0xab}
 VCAN_2_0V_CODES = {0x0f, 0x1f, 0x2f, 0x4f, 0x5f, 0x6f, 0x8f, 0x9f, 0xaf}
 VCAN_2_4V_CODES = {0x33, 0x37, 0x3b, 0x73, 0x77, 0x7b, 0xb3, 0xb7, 0xbb}
 VCAN_2_6V_CODES = {0x3f, 0x7f, 0xbf}
@@ -61,7 +59,7 @@ def get_i2c_voltage(ser, channel):
         return -999.0
 
 
-def run_test_cycle(ser, switches_on, config):
+def run_test_cycle(ser, switches_on, config, session_details, logger):
     """
     Runs through all 256 combinations, checking both SPI and I2C voltages.
     """
@@ -77,8 +75,8 @@ def run_test_cycle(ser, switches_on, config):
 
     passed_count = 0
     failed_count = 0
-    v_spi_a, v_spi_b = -1.0, -1.0
-    v_i2c_a, v_i2c_b = -1.0, -1.0
+
+    logged_data = []
 
     for byte_val in range(257):
         if byte_val > 0:
@@ -103,6 +101,8 @@ def run_test_cycle(ser, switches_on, config):
             fail_a = fail_spi_a or fail_i2c_a
             fail_b = fail_spi_b or fail_i2c_b
 
+            result_str = 'FAIL' if fail_a or fail_b else 'PASS'
+
             if fail_a or fail_b:
                 failed_count += 1
                 fstr_a = '(FAIL)' if fail_a else ''
@@ -115,6 +115,19 @@ def run_test_cycle(ser, switches_on, config):
                 print(f"  OK   @ {byte_to_check:#04x} (exp: {expected_v:.3f}V): "
                       f"A[SPI:{v_spi_a:.3f} I2C:{v_i2c_a:.3f}] | "
                       f"B[SPI:{v_spi_b:.3f} I2C:{v_i2c_b:.3f}]")
+
+            # Log data for each combination
+            test_data = {
+                'byte_val': byte_to_check,
+                'switches_on': switches_on,
+                'expected_v': expected_v,
+                'spi_v_a': v_spi_a,
+                'spi_v_b': v_spi_b,
+                'i2c_v_a': v_i2c_a,
+                'i2c_v_b': v_i2c_b,
+                'result': result_str
+            }
+            logged_data.append(test_data)
 
         if byte_val < 256:
             # Get SPI voltages
@@ -136,24 +149,6 @@ def run_test_cycle(ser, switches_on, config):
             v_i2c_b = get_i2c_voltage(ser, 'B')
 
     print(f"\nSummary: Passed={passed_count}/256, Failed={failed_count}/256")
-    return failed_count == 0
 
-
-def run(ser, config):
-    """Main function to execute the full voltage channel test."""
-    print("\n" + "=" * 40)
-    print("         Running Test: Voltage Channels (SPI + I2C)")
-    print("=" * 40)
-
-    # Part 1: Validation with Switches OFF
-    input("Ensure all DIL switches are OFF, then press Enter to continue...")
-    part1_passed = run_test_cycle(ser, switches_on=False, config=config)
-    print(f"\n--- Part 1 (Switches OFF) Result: {'PASS' if part1_passed else 'FAIL'} ---")
-    if not part1_passed:
-        return False
-
-    # Part 2: Validation with Switches ON
-    input("\nPlease turn ON all DIL switches, then press Enter to continue...")
-    part2_passed = run_test_cycle(ser, switches_on=True, config=config)
-    print(f"\n--- Part 2 (Switches ON) Result: {'PASS' if part2_passed else 'FAIL'} ---")
-    return part2_passed
+    # Return overall result and all logged data
+    return failed_count == 0, logged_data

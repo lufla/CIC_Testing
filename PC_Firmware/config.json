@@ -8,6 +8,15 @@
         "i2c_voltage_tolerance_v": 0.120,
         "i2c_high_voltage_tolerance_v": 0.400
     },
+    "tester_info": {
+        "operator_name": "John Doe",
+        "master_id": "QC-Station-XX",
+        "lab_power_supply_voltage_v": 8.0,
+        "validation_rules": {
+            "serial_number_length": 4,
+            "serial_number_numeric_only": true
+        }
+    },
     "can_test_settings": {
         "vcan_target_voltage": 1.9,
         "voltage_settle_time_s": 1.0,

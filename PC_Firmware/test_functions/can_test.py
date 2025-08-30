@@ -1,7 +1,7 @@
 import time
 
 
-def run(ser, config, num_messages=None):
+def run(ser, config, session_details, logger=None, num_messages=None):
     """
     Initiates and verifies a two-way CAN communication test.
     """
@@ -15,13 +15,15 @@ def run(ser, config, num_messages=None):
 
     except KeyError as e:
         print(f"ERROR: Missing key in 'can_test_settings' in config.json: {e}")
-        return False
+        return False, {}
 
     command = f"RUN_CAN_TEST {num_messages}\n"
     print(f"Sending command to test with {num_messages} messages (timeout: {int(timeout_s)}s)...")
     ser.write(command.encode('utf-8'))
 
     start_time = time.time()
+    test_passed = False
+
     while time.time() - start_time < timeout_s:
         if ser.in_waiting > 0:
             line = ser.readline().decode('utf-8').strip()
@@ -34,13 +36,25 @@ def run(ser, config, num_messages=None):
             elif "CAN_TEST_FINAL:PASS" in line:
                 print("  -> Firmware reports PASS.")
                 print(f"  -> Details: {line.split(':', 2)[2]}")
-                return True
+                test_passed = True
+                break
 
             elif "CAN_TEST_FINAL:FAIL" in line:
                 print("  -> Firmware reports FAIL.")
                 print(f"  -> Details: {line.split(':', 2)[2]}")
-                return False
+                break
 
-    print("--- FAILED (Timeout: Did not receive final status from firmware) ---")
-    return False
+    if not test_passed:
+        print("--- FAILED (Timeout: Did not receive final status from firmware) ---")
 
+    # Log the final result
+    log_data = {
+        'num_messages': num_messages,
+        'timeout_s': timeout_s,
+        'final_firmware_response': line if 'line' in locals() else 'TIMEOUT'
+    }
+
+    if logger:
+        logger.log_data("CAN Communication", 'PASS' if test_passed else 'FAIL', session_details, log_data)
+
+    return test_passed, log_data

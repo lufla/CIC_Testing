@@ -1,7 +1,7 @@
 import time
 
 
-def run(ser, config):
+def run(ser, config, session_details, logger=None):
     """
     Commands the master and slave to read their temperature sensors
     and reports the values. A failure on the slave side is reported
@@ -17,6 +17,8 @@ def run(ser, config):
 
     start_time = time.time()
     response_received = False
+    master_temp, slave_temp = -99.9, -99.9
+    test_result = 'FAIL'
 
     while time.time() - start_time < 5:  # 5-second timeout
         if ser.in_waiting > 0:
@@ -36,8 +38,10 @@ def run(ser, config):
 
                     if slave_temp == 99.00:
                         print("  Slave Temperature: READ FAIL (Device returned 99.00)")
+                        test_result = 'PARTIAL_PASS'
                     else:
                         print(f"  Slave Temperature: {slave_temp:.2f} °C")
+                        test_result = 'PASS'
 
                     response_received = True
                     break  # Exit the loop once we have our data
@@ -47,7 +51,16 @@ def run(ser, config):
 
     if not response_received:
         print("  FAIL: No valid 'TEMPERATURES' response from master device.")
+        test_result = 'FAIL'
+
+    # Log the temperature data
+    if logger:
+        log_data = {
+            'master_temp': master_temp,
+            'slave_temp': slave_temp
+        }
+        logger.log_data("Temperature Communication", test_result, session_details, log_data)
 
     # Per user request, this is not a critical test, so we don't return False.
     # We simply report the findings.
-    return True
+    return True, log_data

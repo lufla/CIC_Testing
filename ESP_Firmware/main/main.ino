@@ -5,6 +5,15 @@
 #include "src/can_handler/can_handler.h"
 #include "src/temperature_handler/temperature_handler.h" // Include the new temperature handler
 
+// ####################################################################
+//                 MASTER ID, individual for each tester board
+const char* MASTER_ID = "QC-Station-01";
+// ####################################################################
+
+// ####################################################################
+//             LAB POWER SUPPLY VOLTAGE (default value)
+const float LAB_PSU_VOLTAGE = 12.0;
+// ####################################################################
 
 // --- I2C Pin Definitions ---
 const int I2C_SDA_PIN = 21;
@@ -65,6 +74,10 @@ void slave_loop() {
       char buf[50];
       snprintf(buf, sizeof(buf), "TEMP_B:%.2f", temp);
       UART_SERIAL.println(buf);
+    } else if (command == "GET_TEST_INFO") {
+        char buf[100];
+        snprintf(buf, sizeof(buf), "TEST_INFO:%s:%.2f", MASTER_ID, LAB_PSU_VOLTAGE);
+        UART_SERIAL.println(buf);
     }
   }
 }
@@ -162,10 +175,12 @@ void master_loop() {
       char buf[50];
       snprintf(buf, sizeof(buf), "I2C_VOLTAGE_A:%.4f", v);
       Serial.println(buf);
+    } else if (strcmp(cmdBuffer, "GET_TEST_INFO") == 0) {
+        UART_SERIAL.printf("TEST_INFO:%s:%.2f\n", MASTER_ID, LAB_PSU_VOLTAGE);
+        Serial.printf("TEST_INFO:%s:%.2f\n", MASTER_ID, LAB_PSU_VOLTAGE);
     } else {
-      UART_SERIAL.println(cmdBuffer);
+        UART_SERIAL.println(cmdBuffer);
     }
-  }
 
   if (UART_SERIAL.available() > 0) {
     String response = UART_SERIAL.readStringUntil('\n');
@@ -203,4 +218,3 @@ void loop() {
   if (currentRole == MASTER) master_loop();
   else if (currentRole == SLAVE) slave_loop();
 }
-

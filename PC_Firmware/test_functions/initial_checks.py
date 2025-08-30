@@ -21,25 +21,26 @@ def parse_data_response(response):
     return None
 
 
-def run(ser, config, ranges, is_pre_check=False):
+def run(ser, config, ranges, session_details, logger=None, is_pre_check=False):
     """
     Performs initial hardware checks by reading sensor values and
     comparing them against expected ranges from the config file.
     """
     duration = config['settings']['initial_voltage_duration']
 
-    if is_pre_check:
+    if not is_pre_check:
         print("\n--- Expected Ranges ---")
         print(f"  CIC Voltage:  {ranges['cic_v_min']:.3f}V - {ranges['cic_v_max']:.3f}V  |  "
               f"CIC Current:  {ranges['cic_i_min'] * 1000:.1f}mA - {ranges['cic_i_max'] * 1000:.1f}mA")
         print(f"  VCAN Voltage: {ranges['vcan_v_min']:.3f}V - {ranges['vcan_v_max']:.3f}V  |  "
               f"VCAN Current: {ranges['vcan_i_min'] * 1000:.1f}mA - {ranges['vcan_i_max'] * 1000:.1f}mA")
+        print(f"Starting check for {duration} seconds...")
 
-    print(f"Starting check for {duration} seconds...")
     ser.reset_input_buffer()
 
     start_time = time.time()
     all_checks_passed = True
+    readings = {}
 
     while time.time() - start_time < duration:
         ser.write(b"CHECK_SPI_ADC\n")
@@ -74,6 +75,17 @@ def run(ser, config, ranges, is_pre_check=False):
 
         time.sleep(0.2)  # Short delay between readings
 
-    print("\n--- Initial Check Complete ---")
-    print(f"Result: {'PASS' if all_checks_passed else 'FAIL'}")
-    return all_checks_passed
+    if not is_pre_check:
+        print("\n--- Initial Check Complete ---")
+        print(f"Result: {'PASS' if all_checks_passed else 'FAIL'}")
+
+    # Log the final results
+    if logger and not is_pre_check:
+        log_data = {
+            "ranges": ranges,
+            "readings": readings,
+            "overall_pass": all_checks_passed
+        }
+        logger.log_data("Initial Checks", 'PASS' if all_checks_passed else 'FAIL', session_details, log_data)
+
+    return all_checks_passed, readings
