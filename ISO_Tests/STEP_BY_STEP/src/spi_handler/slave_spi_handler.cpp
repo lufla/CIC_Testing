@@ -1,4 +1,4 @@
-#include "spi_handler.h"
+#include "slave_spi_handler.h"
 #include <SPI.h>
 
 // --- ADC & System Configuration ---
@@ -11,7 +11,7 @@ const float CIC_C_SCALING_FACTOR = 49.9;
 const float VCAN_VOLTAGE_MULTIPLIER = 8.0;
 const float VCAN_C_SCALING_FACTOR = 16.467;
 
-// --- Pin Definitions ---
+// --- SLAVE-ONLY PIN DEFINITIONS ---
 const int ADC_CSb_PIN = 15;
 const int ADC_OUT_PIN = 12; // MISO
 const int ADC_DIN_PIN = 13; // MOSI
@@ -20,8 +20,13 @@ const int ADC_SCLK_PIN = 14;
 // SPI settings for the ADC
 SPISettings adcSPISettings(1000000, MSBFIRST, SPI_MODE0);
 
-// Private helper function to read a raw 12-bit value from a specific channel.
-uint16_t read_adc_raw(AdcChannel channel) {
+void SlaveSpiHandler::begin() {
+  pinMode(ADC_CSb_PIN, OUTPUT);
+  digitalWrite(ADC_CSb_PIN, HIGH); // Deselect ADC initially
+  SPI.begin(ADC_SCLK_PIN, ADC_OUT_PIN, ADC_DIN_PIN);
+}
+
+uint16_t SlaveSpiHandler::readAdcRaw(AdcChannel channel) {
   uint8_t commandByte = channel << 3;
   uint16_t commandToSend = (commandByte << 8);
 
@@ -31,41 +36,27 @@ uint16_t read_adc_raw(AdcChannel channel) {
   digitalWrite(ADC_CSb_PIN, HIGH);
   SPI.endTransaction();
 
-  // The result is in the lower 12 bits
-  return adcResult & 0x0FFF;
+  return adcResult & 0x0FFF; // Result is in the lower 12 bits
 }
 
-// Public function to set up the SPI ADC.
-void setup_spi_adc() {
-  pinMode(ADC_CSb_PIN, OUTPUT);
-  digitalWrite(ADC_CSb_PIN, HIGH); // Deselect ADC initially
-  SPI.begin(ADC_SCLK_PIN, ADC_OUT_PIN, ADC_DIN_PIN);
-}
-
-// Public function to read all values and perform calculations.
-AdcReadings read_all_adc_values() {
+AdcReadings SlaveSpiHandler::readAllAdcValues() {
     AdcReadings readings;
 
-    // --- Read and Calculate CIC Voltage ---
-    uint16_t raw_cic_v = read_adc_raw(ADC_CIC_VOLTAGE);
+    uint16_t raw_cic_v = readAdcRaw(ADC_CIC_VOLTAGE);
     float cic_adc_v = (raw_cic_v / (float)ADC_RESOLUTION) * V_REF_ADC;
     readings.cic_v = cic_adc_v / CIC_V_DIV;
 
-    // --- Read and Calculate CIC Current ---
-    uint16_t raw_cic_i = read_adc_raw(ADC_CIC_CURRENT);
+    uint16_t raw_cic_i = readAdcRaw(ADC_CIC_CURRENT);
     float cic_adc_i = (raw_cic_i / (float)ADC_RESOLUTION) * V_REF_ADC;
     readings.cic_i = cic_adc_i / CIC_C_SCALING_FACTOR;
 
-    // --- Read and Calculate VCAN Voltage ---
-    uint16_t raw_vcan_v = read_adc_raw(ADC_VCAN_VOLTAGE);
+    uint16_t raw_vcan_v = readAdcRaw(ADC_VCAN_VOLTAGE);
     float vcan_adc_v = (raw_vcan_v / (float)ADC_RESOLUTION) * V_REF_ADC;
     readings.vcan_v = vcan_adc_v * VCAN_VOLTAGE_MULTIPLIER;
 
-    // --- Read and Calculate VCAN Current ---
-    uint16_t raw_vcan_i = read_adc_raw(ADC_VCAN_CURRENT);
+    uint16_t raw_vcan_i = readAdcRaw(ADC_VCAN_CURRENT);
     float vcan_adc_i = (raw_vcan_i / (float)ADC_RESOLUTION) * V_REF_ADC;
     readings.vcan_i = vcan_adc_i / VCAN_C_SCALING_FACTOR;
 
     return readings;
 }
-

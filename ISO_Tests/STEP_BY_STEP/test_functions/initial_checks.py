@@ -18,12 +18,12 @@ def run(ser, config, ranges):
     duration = config['settings']['initial_voltage_duration']
 
     print(f"\n--- Expected Ranges ---")
-    print(f"  CIC Voltage:  {ranges['cic_v_min']:.3f}V - {ranges['cic_v_max']:.3f}V")
-    print(f"  CIC Current:  {ranges['cic_i_min'] * 1000:.1f}mA - {ranges['cic_i_max'] * 1000:.1f}mA")
-    print(f"  VCAN Voltage: {ranges['vcan_v_min']:.3f}V - {ranges['vcan_v_max']:.3f}V")
-    print(f"  VCAN Current: {ranges['vcan_i_min'] * 1000:.1f}mA - {ranges['vcan_i_max'] * 1000:.1f}mA")
+    print(f"  CIC Voltage:  {ranges['cic_v_min']:.3f}V - {ranges['cic_v_max']:.3f}V  |"
+    f"  CIC Current:  {ranges['cic_i_min'] * 1000:.1f}mA - {ranges['cic_i_max'] * 1000:.1f}mA")
+    print(f"  VCAN Voltage: {ranges['vcan_v_min']:.3f}V - {ranges['vcan_v_max']:.3f}V  |"
+    f"  VCAN Current: {ranges['vcan_i_min'] * 1000:.1f}mA - {ranges['vcan_i_max'] * 1000:.1f}mA")
 
-    print(f"\nStarting check for {duration} seconds...")
+    print(f"Starting check for {duration} seconds...")
     ser.write(b'CHECK_SPI_ADC\n')
     start_time = time.time()
     test_passed = True

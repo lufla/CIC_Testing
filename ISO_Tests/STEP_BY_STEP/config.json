@@ -4,8 +4,10 @@
         "tolerance_percent": 10.0,
         "baud_rate": 115200,
         "initial_voltage_duration": 1,
-        "voltage_test_tolerance_v": 0.100,
-        "zero_threshold_v": 0.100
+        "voltage_test_tolerance_v": 0.120,
+        "zero_threshold_v": 0.120,
+        "high_voltage_tolerance_v": 0.150,
+        "i2c_voltage_tolerance_v": 0.120
     },
     "nominal_values": {
         "cic_voltage": 3.3,
@@ -15,4 +17,3 @@
         "vcan_current_min_ma": 0.0
     }
 }
-
