@@ -33,6 +33,11 @@
             255
         ]
     },
+    "burnout_test_settings": {
+        "duration_minutes": 1,
+        "max_vcan_setting": 255,
+        "max_i2c_dac_value": 4095
+    },
     "initial_check_ranges": {
         "vcan_v_min": 8.1,
         "vcan_v_max": 9.9,

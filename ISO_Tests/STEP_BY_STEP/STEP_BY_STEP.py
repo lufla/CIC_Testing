@@ -4,17 +4,12 @@ import json
 import time
 from serial.tools import list_ports
 
-from test_functions import initial_checks, voltage_test, current_test, can_test
-
-
-def run_temperature_comm(ser, config):
-    print("\n--- Running Test: Temperature Communication ---")
-    print("This test is not yet implemented.")
-    time.sleep(1)
-    return True
+# Assume other test files are in a 'test_functions' sub-directory
+from test_functions import initial_checks, voltage_test, current_test, can_test, temperature_test, burnout_test
 
 
 def load_config():
+    """Loads the main configuration file."""
     try:
         with open('config.json', 'r') as f:
             return json.load(f)
@@ -35,6 +30,7 @@ def load_check_ranges(config):
 
 
 def select_serial_port():
+    """Scans for and allows user to select a serial port."""
     print("Scanning for available serial ports...")
     ports = [p for p in list_ports.comports() if p.device and "n/a" not in p.description.lower()]
     if not ports: return None
@@ -53,82 +49,132 @@ def select_serial_port():
             return None
 
 
+# ==============================================================================
+# FULL TEST SEQUENCE
+# ==============================================================================
 def run_full_test_sequence(ser, config, ranges):
+    """Runs all tests in a predefined sequence and provides a final summary."""
     print("\n--- Starting Full Test Sequence ---")
-    input("Ensure all DIL switches are OFF, then press Enter...")
+
+    test_results = []
+
+    # --- Sequence Start ---
+
     print("\nStep 1: Performing Setup & Initial Checks...")
-    if not initial_checks.run(ser, config, ranges):
-        print("\n--- FULL TEST FAILED: Initial checks did not pass. ---")
-        return
+    time.sleep(1)
+    initial_pass = initial_checks.run(ser, config, ranges)
+    test_results.append(("Initial Checks", initial_pass))
 
-    test_suite = [
-        ("Voltage Channels", voltage_test.run),
-        ("Current Channels", current_test.run),
-        ("Temperature Communication", run_temperature_comm),
-        ("CAN & Crosstalk", can_test.run),
-    ]
-    all_tests_passed = True
-    for name, test_func in test_suite:
-        print(f"\n--- Pre-check for {name} ---")
-        if not initial_checks.run(ser, config, ranges, is_pre_check=True):
-            print(f"--- FAILED: Initial checks did not pass before {name} ---")
-            all_tests_passed = False
-            break
-        if name == "Current Channels":
-            input("\nEnsure all DIL switches are ON, then press Enter to begin the test...")
-
-        result = test_func(ser, config)
-        if not result:
-            all_tests_passed = False
-            print(f"--- FAILED on test: {name} ---")
-            break
-
-    print(f"\n--- FULL TEST SEQUENCE COMPLETE ---")
-    print(f"Final Result: {'PASS' if all_tests_passed else 'FAILED'}")
-
-
-def run_voltage_channels_test(ser, config, ranges):
-    """Wrapper for the voltage test with its pre-check."""
-    print("\n--- Pre-check for Voltage Test ---")
-    if initial_checks.run(ser, config, ranges, is_pre_check=True):
-        final_result = voltage_test.run(ser, config)
-        print(f"\n--- Voltage Channel Test Result: {'PASS' if final_result else 'FAILED'} ---")
+    if not initial_pass:
+        print("\n--- FULL TEST ABORTED: Initial checks did not pass. ---")
     else:
-        print("\n--- Voltage Channel Test SKIPPED: Initial checks failed. ---")
+        # Define the main test suite
+        test_suite = [
+            ("Voltage Channels", voltage_test.run, {}),
+            ("Current Channels", current_test.run, {}),
+            ("Temperature Communication", temperature_test.run, {}),
+            ("CAN Communication (Short)", can_test.run,
+             {'num_messages': config['can_test_settings']['short_run_messages']}),
+            ("Burnout Test", burnout_test.run, {}),
+            ("CAN Communication (Post-Burnout)", can_test.run,
+             {'num_messages': config['can_test_settings']['long_run_messages']})
+        ]
+
+        for name, test_func, kwargs in test_suite:
+            print(f"\n--- Running Test: {name} ---")
+
+            if not initial_checks.run(ser, config, ranges, is_pre_check=True):
+                print(f"--- FAILED: Pre-check failed before {name} ---")
+                test_results.append((name, False))
+                break
+
+            result = test_func(ser, config, **kwargs)
+            test_results.append((name, result))
+
+            if not result:
+                print(f"--- ABORTING: Critical test failed: {name} ---")
+                break
+
+    # --- Final Summary ---
+    print("\n" + "=" * 50)
+    print("           FULL TEST SEQUENCE SUMMARY")
+    print("=" * 50)
+    all_passed = True
+    for name, result in test_results:
+        status_emoji = "✅" if result else "❌"
+        print(f"{status_emoji} {name:<40}: {'PASS' if result else 'FAIL'}")
+        if not result:
+            all_passed = False
+
+    print("-" * 50)
+    if all_passed:
+        print("✅ Overall Result: ALL TESTS PASSED")
+    else:
+        print("❌ Overall Result: TEST SEQUENCE FAILED")
+        print("   Failed stages:")
+        for name, result in test_results:
+            if not result:
+                print(f"     - {name}")
+    print("=" * 50)
+
+
+# ==============================================================================
+# INDIVIDUAL TEST WRAPPERS
+# ==============================================================================
+def run_voltage_channels_test(ser, config, ranges):
+    if initial_checks.run(ser, config, ranges, is_pre_check=True):
+        result = voltage_test.run(ser, config)
+        print(f"\n--- Voltage Channel Test Result: {'PASS' if result else 'FAILED'} ---")
+    else:
+        print("\n--- Test SKIPPED: Initial checks failed. ---")
 
 
 def run_current_channels_test(ser, config, ranges):
-    """Wrapper for the current test with its pre-check."""
-    input("\nEnsure all DIL switches are ON, then press Enter to begin the pre-check...")
-    print("\n--- Pre-check for Current Test ---")
     if initial_checks.run(ser, config, ranges, is_pre_check=True):
-        final_result = current_test.run(ser, config)
-        print(f"\n--- Current Channel Test Result: {'PASS' if final_result else 'FAILED'} ---")
+        result = current_test.run(ser, config)
+        print(f"\n--- Current Channel Test Result: {'PASS' if result else 'FAILED'} ---")
     else:
-        print("\n--- Current Channel Test SKIPPED: Initial checks failed. ---")
+        print("\n--- Test SKIPPED: Initial checks failed. ---")
+
+
+def run_temperature_test(ser, config, ranges):
+    if initial_checks.run(ser, config, ranges, is_pre_check=True):
+        temperature_test.run(ser, config)
+    else:
+        print("\n--- Test SKIPPED: Initial checks failed. ---")
 
 
 def run_can_channels_test(ser, config, ranges):
-    """Wrapper for the CAN test with its pre-check."""
-    print("\n--- Pre-check for CAN Test ---")
     if initial_checks.run(ser, config, ranges, is_pre_check=True):
-        final_result = can_test.run(ser, config)
-        print(f"\n--- CAN & Crosstalk Test Result: {'PASS' if final_result else 'FAILED'} ---")
+        num_msg = config['can_test_settings']['short_run_messages']
+        result = can_test.run(ser, config, num_messages=num_msg)
+        print(f"\n--- CAN Communication Test Result: {'PASS' if result else 'FAILED'} ---")
     else:
-        print("\n--- CAN Test SKIPPED: Initial checks failed. ---")
+        print("\n--- Test SKIPPED: Initial checks failed. ---")
 
 
+def run_burnout_test_wrapper(ser, config, ranges):
+    if initial_checks.run(ser, config, ranges, is_pre_check=True):
+        result = burnout_test.run(ser, config)
+        print(f"\n--- Burnout Test Result: {'PASS' if result else 'FAILED'} ---")
+    else:
+        print("\n--- Test SKIPPED: Initial checks failed. ---")
+
+
+# ==============================================================================
+# MAIN MENU
+# ==============================================================================
 def main_menu():
+    """Displays the main menu and handles user input."""
     config = load_config()
     if not config: sys.exit(1)
     port = select_serial_port()
     if not port: sys.exit(1)
-
     ranges = load_check_ranges(config)
     if not ranges: sys.exit(1)
 
     try:
-        with serial.Serial(port, config['settings']['baud_rate'], timeout=2) as ser:
+        with serial.Serial(port, config['settings']['baud_rate'], timeout=3) as ser:
             print(f"\nSuccessfully connected to {port}")
             time.sleep(1)
             ser.read_all()
@@ -139,32 +185,31 @@ def main_menu():
                 print("3. Test Voltage Channels")
                 print("4. Test Current Channels")
                 print("5. Test Temperature Communication")
-                print("6. Test CAN & Crosstalk")
-                print("7. Exit")
+                print("6. Test CAN Communication")
+                print("7. Run Burnout Test")
+                print("8. Exit")
                 print("-" * 40)
                 choice = input("Enter your choice: ")
-                test_was_run = True
+
                 if choice == '1':
                     run_full_test_sequence(ser, config, ranges)
                 elif choice == '2':
-                    input("Ensure all DIL switches are OFF, then press Enter...")
                     initial_checks.run(ser, config, ranges)
                 elif choice == '3':
                     run_voltage_channels_test(ser, config, ranges)
                 elif choice == '4':
                     run_current_channels_test(ser, config, ranges)
                 elif choice == '5':
-                    run_temperature_comm(ser, config)
+                    run_temperature_test(ser, config, ranges)
                 elif choice == '6':
                     run_can_channels_test(ser, config, ranges)
                 elif choice == '7':
+                    run_burnout_test_wrapper(ser, config, ranges)
+                elif choice == '8':
                     break
                 else:
-                    test_was_run = False
                     print("Invalid choice, please try again.")
-                if test_was_run:
-                    print("\nReturning to menu in 3 seconds...")
-                    time.sleep(3)
+
     except serial.SerialException as e:
         print(f"Serial Error: {e}")
     except KeyboardInterrupt:
