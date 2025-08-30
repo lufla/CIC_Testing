@@ -1,64 +1,79 @@
 import time
+import re
 
 
-def check_value(name, value, v_min, v_max):
-    """Checks if a single value is within its range. Returns True if failed."""
-    if not (v_min <= value <= v_max):
-        print(f"-> FAILED! {name}: {value:.4f} is outside range ({v_min:.4f} - {v_max:.4f})")
-        return True
-    return False
+def parse_data_response(response):
+    """Parses the 'DATA:' response string into a dictionary of floats."""
+    if not response or not response.startswith("DATA:"):
+        return None
+
+    parts = response.replace("DATA:", "").strip().split(',')
+    if len(parts) == 4:
+        try:
+            return {
+                "cic_v": float(parts[0]),
+                "cic_i": float(parts[1]),
+                "vcan_v": float(parts[2]),
+                "vcan_i": float(parts[3])
+            }
+        except (ValueError, IndexError):
+            return None
+    return None
 
 
-def run(ser, config, ranges):
+def run(ser, config, ranges, is_pre_check=False):
     """
-    Performs the timed check of initial ADC values from the slave.
-    Returns True on PASS, False on FAIL.
+    Performs initial hardware checks by reading sensor values and
+    comparing them against expected ranges from the config file.
     """
-    # Use the new key from config.json
     duration = config['settings']['initial_voltage_duration']
 
-    print(f"\n--- Expected Ranges ---")
-    print(f"  CIC Voltage:  {ranges['cic_v_min']:.3f}V - {ranges['cic_v_max']:.3f}V  |"
-    f"  CIC Current:  {ranges['cic_i_min'] * 1000:.1f}mA - {ranges['cic_i_max'] * 1000:.1f}mA")
-    print(f"  VCAN Voltage: {ranges['vcan_v_min']:.3f}V - {ranges['vcan_v_max']:.3f}V  |"
-    f"  VCAN Current: {ranges['vcan_i_min'] * 1000:.1f}mA - {ranges['vcan_i_max'] * 1000:.1f}mA")
+    if is_pre_check:
+        print("\n--- Expected Ranges ---")
+        print(f"  CIC Voltage:  {ranges['cic_v_min']:.3f}V - {ranges['cic_v_max']:.3f}V  |  "
+              f"CIC Current:  {ranges['cic_i_min'] * 1000:.1f}mA - {ranges['cic_i_max'] * 1000:.1f}mA")
+        print(f"  VCAN Voltage: {ranges['vcan_v_min']:.3f}V - {ranges['vcan_v_max']:.3f}V  |  "
+              f"VCAN Current: {ranges['vcan_i_min'] * 1000:.1f}mA - {ranges['vcan_i_max'] * 1000:.1f}mA")
 
     print(f"Starting check for {duration} seconds...")
-    ser.write(b'CHECK_SPI_ADC\n')
+    ser.reset_input_buffer()
+
     start_time = time.time()
-    test_passed = True
-    data_received = False
+    all_checks_passed = True
 
     while time.time() - start_time < duration:
-        if ser.in_waiting > 0:
-            line = ser.readline().decode('utf-8').strip()
-            if line.startswith("DATA:"):
-                data_received = True
-                try:
-                    parts = line.split(':')[1].split(',')
-                    cic_v, cic_i, vcan_v, vcan_i = map(float, parts)
-                    print(
-                        f"  OK: CIC V:{cic_v:.3f}V, I:{cic_i * 1000:.1f}mA | VCAN V:{vcan_v:.3f}V, I:{vcan_i * 1000:.1f}mA")
+        ser.write(b"CHECK_SPI_ADC\n")
+        response = ser.readline().decode('utf-8').strip()
 
-                    failure = any([
-                        check_value("CIC Voltage", cic_v, ranges['cic_v_min'], ranges['cic_v_max']),
-                        check_value("CIC Current", cic_i, ranges['cic_i_min'], ranges['cic_i_max']),
-                        check_value("VCAN Voltage", vcan_v, ranges['vcan_v_min'], ranges['vcan_v_max']),
-                        check_value("VCAN Current", vcan_i, ranges['vcan_i_min'], ranges['vcan_i_max'])
-                    ])
+        readings = parse_data_response(response)
 
-                    if failure:
-                        test_passed = False
-                        break
-                except (ValueError, IndexError):
-                    print(f"Warning: Could not parse data: {line}")
-        time.sleep(0.1)
+        if not readings:
+            print(f"  Error: Invalid response from device: '{response}'")
+            all_checks_passed = False
+            continue
+
+        # Perform checks against the provided ranges
+        checks = {
+            "CIC V": (ranges['cic_v_min'], readings['cic_v'], ranges['cic_v_max']),
+            "VCAN V": (ranges['vcan_v_min'], readings['vcan_v'], ranges['vcan_v_max']),
+            "CIC I": (ranges['cic_i_min'], readings['cic_i'], ranges['cic_i_max']),
+            "VCAN I": (ranges['vcan_i_min'], readings['vcan_i'], ranges['vcan_i_max'])
+        }
+
+        pass_fail_summary = []
+        for name, (min_val, val, max_val) in checks.items():
+            if not (min_val <= val <= max_val):
+                all_checks_passed = False
+                pass_fail_summary.append(f"{name} FAIL")
+
+        if not all_checks_passed:
+            print(f"  FAIL: Readings out of range. {', '.join(pass_fail_summary)}")
+        else:
+            print(f"  OK: CIC V:{readings['cic_v']:.3f}V, I:{readings['cic_i'] * 1000:.1f}mA | "
+                  f"VCAN V:{readings['vcan_v']:.3f}V, I:{readings['vcan_i'] * 1000:.1f}mA")
+
+        time.sleep(0.2)  # Short delay between readings
 
     print("\n--- Initial Check Complete ---")
-    if not data_received:
-        print("Result: FAILED - No data received from slave.")
-        return False
-
-    print(f"Result: {'PASS' if test_passed else 'FAILED'}")
-    return test_passed
-
+    print(f"Result: {'PASS' if all_checks_passed else 'FAIL'}")
+    return all_checks_passed

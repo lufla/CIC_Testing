@@ -14,6 +14,10 @@ const byte MCP23S08_GPIO = 0x09;
 const byte MCP23S08_WRITE_OPCODE = 0x40;
 const SPISettings controlSPISettings(1000000, MSBFIRST, SPI_MODE0);
 
+// This factor is derived from the schematic's current measurement circuit
+// (shunt resistor + amplifier gain). It's assumed to be the same as the slave's.
+const float VCAN_CURRENT_SCALING_FACTOR = 16.467;
+
 MasterSpiHandler::MasterSpiHandler() : c_spi(VSPI), m_spi(HSPI) {}
 
 void MasterSpiHandler::begin() {
@@ -148,3 +152,35 @@ float MasterSpiHandler::readVcanVoltage(char channel) {
     adc_voltage *= 2; // Resistor divider scaling
     return adc_voltage;
 }
+
+float MasterSpiHandler::readVcanCurrent(char channel) {
+    int adc_ch = 1; // VCAN current is on ADC channel 1
+    int channelbyte = (adc_ch * 8) | 0x80;
+
+    selectAdc(channel);
+    m_spi.transfer(channelbyte);
+    m_spi.transfer(0x00); m_spi.transfer(0x00); m_spi.transfer(0x00); m_spi.transfer(0x00);
+    deselectAdc();
+
+    delay(50);
+
+    selectAdc(channel);
+    m_spi.transfer(channelbyte);
+    m_spi.transfer(0x00);
+    int byte2 = m_spi.transfer(0x00);
+    int byte3 = m_spi.transfer(0x00);
+    m_spi.transfer(0x00);
+    deselectAdc();
+
+    long adc_value = (256L * byte2) + byte3;
+    float adc_voltage = (adc_value / 65535.0) * 2.5;
+
+    // CORRECTED: This scaling factor matches the voltage channel and the reference design.
+    adc_voltage *= 2;
+
+    // The ADC voltage is divided by the scaling factor to get the actual current in Amperes.
+    float current = adc_voltage / VCAN_CURRENT_SCALING_FACTOR;
+
+    return current;
+}
+
